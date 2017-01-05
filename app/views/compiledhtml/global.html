@@ -7,8 +7,32 @@
   <body>
     <div class="container">
       <header class="magazine-header">
-        <div class="magazine-header__weather"><img src="../../images/header/weather.png" alt="weather image" class="img-weather"/>
-          <p class="city">New York, NY 24°</p>
+        <div class="grid--auto magazine-header-content">
+          <div class="1/4 grid__cell magazine-header-content__weather"><img src="../../images/header/weather.png" alt="" class="img-weather"/></div>
+          <div class="1/4 grid__cell magazine-header-content__location"> 
+            <p class="magazine-header-content__location--city">New York, NY 24°</p>
+            <p class="magazine-header-content__location--date">Sunday, September 3, 2015</p>
+          </div>
+          <div class="1/4 grid__cell magazine-header-content__logo"><a href="#" class="magazine-header__logo--link"><img src="../../images/header/logo.png" alt="Silk" class="magazine-header__logo--img"/></a></div>
+          <div class="1/4 grid__cell magazine-header-content__login">
+            <button class="magazine-header-content__login--btnlogin">Log in</button>
+          </div>
+          <nav class="magazine-header-content-navigation">
+            <ul class="magazine-header-content-navigation__category">
+              <li>News</li>
+              <li>Style</li>
+              <li>Food & Drink</li>
+              <li>Travel</li>
+              <li>Sport</li>
+              <li>Cars & Moto</li>
+              <li>Culture</li>
+              <li>Video</li>
+              <li>Archive</li>
+              <li>
+                <button class="button-search">Search </button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
     </div>

@@ -25,18 +25,18 @@ $av-breakpoints: (
   'widescreen': 'screen and (min-width: 1160px)',
   'retina': 'screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)') !default; // Responsive breakpoints. Add/remove as appropriate
 // Enable/disable grid layouts
-$av-enable-grid-center: false !default;
-$av-enable-grid-cell-center: false !default;
-$av-enable-grid-right: false !default;
-$av-enable-grid-middle: false !default;
-$av-enable-grid-bottom: false !default;
-$av-enable-grid-flush: false !default;
-$av-enable-grid-tiny: false !default;
-$av-enable-grid-small: false !default;
-$av-enable-grid-large: false !default;
-$av-enable-grid-huge: false !default;
-$av-enable-grid-auto: false !default;
-$av-enable-grid-rev: false !default;
+$av-enable-grid-center: true !default;
+$av-enable-grid-cell-center: true !default;
+$av-enable-grid-right: true !default;
+$av-enable-grid-middle: true !default;
+$av-enable-grid-bottom: true !default;
+$av-enable-grid-flush: true !default;
+$av-enable-grid-tiny: true !default;
+$av-enable-grid-small: true !default;
+$av-enable-grid-large: true !default;
+$av-enable-grid-huge: true !default;
+$av-enable-grid-auto: true !default;
+$av-enable-grid-rev: true !default;
 
 
 // LOGIC aka THE MAGIC

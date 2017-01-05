@@ -1,5 +1,28 @@
 header.magazine-header
-    .magazine-header__weather
-        img.img-weather(src="../../images/header/weather.png", alt="weather image")
-        p.city New York, NY 24°
+    .grid--auto.magazine-header-content
+        div(class="1/4 grid__cell magazine-header-content__weather")
+            img.img-weather(src="../../images/header/weather.png", alt="")
+        div(class="1/4 grid__cell magazine-header-content__location")  
+            p.magazine-header-content__location--city New York, NY 24°
+            p.magazine-header-content__location--date Sunday, September 3, 2015
+        div(class="1/4 grid__cell magazine-header-content__logo")
+            a.magazine-header__logo--link(href="#")
+                img.magazine-header__logo--img(src="../../images/header/logo.png", alt="Silk")
+        div(class="1/4 grid__cell magazine-header-content__login")
+            button.magazine-header-content__login--btnlogin Log in
+        nav.magazine-header-content-navigation
+            ul.magazine-header-content-navigation__category
+                li News
+                li Style
+                li Food & Drink
+                li Travel
+                li Sport
+                li Cars & Moto
+                li Culture
+                li Video
+                li Archive
+                li
+                    button.button-search Search 
+
+             
 
