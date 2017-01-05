@@ -1,4 +1,6 @@
 .magazine-header{
+    margin: 2% 10% 0 10%;
+
     &-content{
         &__weather{
             padding-top: 18px;
@@ -29,9 +31,25 @@
                 color: black;
                 border-radius: 10px;
                 border: 1px solid #666666;
-                width: 200%;
                 height: 7%;
             }
         }
+        &-navbar{
+            margin: 2% 10% 0 10%;
+            &__menu{
+                list-style: none;
+            }
+            &__item{
+                float: left;
+                margin-right: 5%;
+                padding-top: 2%;
+                &--btnsearch__searchicon{
+                    width:52%;
+                }
+            }
+
+        }
+        
+
     }
 }
