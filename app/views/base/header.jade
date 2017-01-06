@@ -1,41 +1,42 @@
-header.magazine-header
-    .grid--auto.magazine-header-content
-        div(class="1/4 grid__cell magazine-header-content__weather")
-            img.img-weather(src="../../images/header/weather.png", alt="")
-        div(class="1/4 grid__cell magazine-header-content__location")  
-            p.magazine-header-content__location--city New York, NY 24°
-            p.magazine-header-content__location--date Sunday, September 3, 2015
-        div(class="1/4 grid__cell magazine-header-content__logo")
-            a.magazine-header-content__logo--link(href="#")
-                img.magazine-header-content__logo--img(src="../../images/header/logo.png", alt="Silk")
-        div(class="1/4 grid__cell magazine-header-content__login")
-            button.magazine-header-content__login--btnlogin Log In
-                img.magazine-header-content__login--btnlogin__usericon(src="../../images/header/user-symbol.png", alt="user icon")
-        
-nav.magazine-header-content-navbar
-    ul.magazine-header-content-navbar__menu
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") News
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Style
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Food & Drink
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Travel
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Sport
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Cars & Moto
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Culture
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Video
-        li.magazine-header-content-navbar__item
-            a.magazine-header-content-navbar--link(href="#") Archive
-        li.magazine-header-content-navbar__item
-            button.magazine-header-navbar__item--btnsearch
-                img.magazine-header-navbar__item--btnsearch__searchicon(src="../../images/header/magnifying-glass.png", alt="Search")                    
-
-
-             
-
+.grid
+  header
+    .magazine-header-content
+      div(class="1/4 grid__cell")
+        img.img-weather(src="../../images/header/weather.png", alt="")
+      div(class="1/4 grid__cell")
+        .magazine-header-content__location
+          p.magazine-header-content__location--city New York, NY 74°F
+          p.magazine-header-content__location--date Sunday, September 3, 2015
+      div(class="1/4 grid__cell")
+        .magazine-header-content__logo
+          a.magazine-header-content__logo--link(href="#")
+            img.magazine-header-content__logo--img(src="../../images/header/logo.png", alt="Silk")
+      div(class="1/4 grid__cell")
+        .magazine-header-content__login
+          button.magazine-header-content__login--btnlogin Log In
+            img.magazine-header-content__login--btnlogin__usericon(src="../../images/header/user-symbol.png", alt="user icon")
+    .magazine-header-content-navbar
+      div(class="4/4 grid__cell")
+        nav.magazine-header-content-navbar__items
+          ul.magazine-header-content-navbar__menu
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") News
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Style
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Food & Drink
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Travel
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Sport
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Cars & Moto
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Culture
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Video
+            li.magazine-header-content-navbar__item
+              a.magazine-header-content-navbar--link(href="#") Archive
+            li.magazine-header-content-navbar__item
+              button.magazine-header-navbar__item--btnsearch
+                img.magazine-header-navbar__item--btnsearch__searchicon(src="../../images/header/magnifying-glass.png", alt="Search")

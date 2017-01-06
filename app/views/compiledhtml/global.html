@@ -1,42 +1,147 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <title>Silk</title>
-    <link type="text/css" rel="stylesheet" href="../../styles/compiledcss/global.css"/>
+    <link rel="stylesheet" href="../../styles/base/silk.css">
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
-        <header class="magazine-header">
-          <div class="grid--auto magazine-header-content">
-            <div class="1/4 grid__cell magazine-header-content__weather"><img src="../../images/header/weather.png" alt="" class="img-weather"/></div>
-            <div class="1/4 grid__cell magazine-header-content__location"> 
-              <p class="magazine-header-content__location--city">New York, NY 24°</p>
-              <p class="magazine-header-content__location--date">Sunday, September 3, 2015</p>
+      <div class="grid">
+        <header>
+          <div class="magazine-header-content">
+            <div class="1/4 grid__cell"><img src="../../images/header/weather.png" alt="" class="img-weather"></div>
+            <div class="1/4 grid__cell">
+              <div class="magazine-header-content__location">
+                <p class="magazine-header-content__location--city">New York, NY 74°F</p>
+                <p class="magazine-header-content__location--date">Sunday, September 3, 2015</p>
+              </div>
             </div>
-            <div class="1/4 grid__cell magazine-header-content__logo"><a href="#" class="magazine-header-content__logo--link"><img src="../../images/header/logo.png" alt="Silk" class="magazine-header-content__logo--img"/></a></div>
-            <div class="1/4 grid__cell magazine-header-content__login">
-              <button class="magazine-header-content__login--btnlogin">Log In<img src="../../images/header/user-symbol.png" alt="user icon" class="magazine-header-content__login--btnlogin__usericon"/></button>
+            <div class="1/4 grid__cell">
+              <div class="magazine-header-content__logo"><a href="#" class="magazine-header-content__logo--link"><img src="../../images/header/logo.png" alt="Silk" class="magazine-header-content__logo--img"></a></div>
+            </div>
+            <div class="1/4 grid__cell">
+              <div class="magazine-header-content__login">
+                <button class="magazine-header-content__login--btnlogin">Log In<img src="../../images/header/user-symbol.png" alt="user icon" class="magazine-header-content__login--btnlogin__usericon"></button>
+              </div>
+            </div>
+          </div>
+          <div class="magazine-header-content-navbar">
+            <div class="4/4 grid__cell">
+              <nav class="magazine-header-content-navbar__items">
+                <ul class="magazine-header-content-navbar__menu">
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">News</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Style</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Food & Drink</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Travel</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Sport</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Cars & Moto</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Culture</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Video</a></li>
+                  <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Archive</a></li>
+                  <li class="magazine-header-content-navbar__item">
+                    <button class="magazine-header-navbar__item--btnsearch"><img src="../../images/header/magnifying-glass.png" alt="Search" class="magazine-header-navbar__item--btnsearch__searchicon"></button>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </header>
-        <nav class="magazine-header-content-navbar">
-          <ul class="magazine-header-content-navbar__menu">
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">News</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Style</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Food & Drink</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Travel</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Sport</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Cars & Moto</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Culture</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Video</a></li>
-            <li class="magazine-header-content-navbar__item"><a href="#" class="magazine-header-content-navbar--link">Archive</a></li>
-            <li class="magazine-header-content-navbar__item">
-              <button class="magazine-header-navbar__item--btnsearch"><img src="../../images/header/magnifying-glass.png" alt="Search" class="magazine-header-navbar__item--btnsearch__searchicon"/></button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
+    <div class="grid">
+      <div class="grid--center">
+        <div class="grid-slider">
+          <div class="grid-slider__slider-image">
+            <div class="4/4 grid__cell">
+              <p>col 4/4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid--auto">
+        <div class="grid--flush">
+          <div class="grid-article-box">
+            <div class="1/3 grid__cell">
+              <p>col 1/3</p>
+            </div>
+            <div class="1/3 grid__cell">
+              <p>col 1/3</p>
+            </div>
+            <div class="1/3 grid__cell">
+              <p>col 1/3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid-article-box__small">
+        <div class="1/3 grid__cell">
+          <p>col 1/3</p>
+        </div>
+        <div class="1/3 grid__cell">
+          <p>col 1/3</p>
+        </div>
+        <div class="1/3 grid__cell">
+          <p>col 1/3</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid--flush">
+        <div class="grid-article-box__small-flush">
+          <div class="1/4 grid__cell">
+            <p>col 1/4</p>
+          </div>
+          <div class="1/4 grid__cell">
+            <p>col 1/4</p>
+          </div>
+          <div class="1/4 grid__cell">
+            <p>col 1/4</p>
+          </div>
+          <div class="1/4 grid__cell">
+            <p>col 1/4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid-article-box__video">
+        <div class="1/4 grid__cell">
+          <p>col 1/4</p>
+        </div>
+        <div class="1/4 grid__cell">
+          <p>col 1/4</p>
+        </div>
+        <div class="1/4 grid__cell">
+          <p>col 1/4</p>
+        </div>
+        <div class="1/4 grid__cell">
+          <p>col 1/4</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="grid">
+        <footer>
+          <div class="grid-footer">
+            <div class="1/4 grid__cell">
+              <p>col 1/4</p>
+            </div>
+            <div class="1/4 grid__cell">
+              <p>col 1/4</p>
+            </div>
+            <div class="1/4 grid__cell">
+              <p>col 1/4</p>
+            </div>
+            <div class="1/4 grid__cell">
+              <p>col 1/4</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </footer>
   </body>
 </html>

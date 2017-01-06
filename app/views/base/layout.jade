@@ -1,11 +1,11 @@
-html(lang="en")
-	head
-		title Silk
-		link(type="text/css", rel="stylesheet", href="../../styles/compiledcss/global.css")
-	body
-		.wrapper
-			.container
-				include header.jade
-			block main
+doctype html
+html
+  head
+    include head.jade
+  body
+    .wrapper
+      include header.jade
+    block main
 
-		include footer.jade
+    footer
+      include footer.jade

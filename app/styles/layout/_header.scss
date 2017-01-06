@@ -1,55 +1,50 @@
 .magazine-header{
-    margin: 2% 10% 0 10%;
-
-    &-content{
-        &__weather{
-            padding-top: 18px;
-        }
-        &__location{
-            line-height: 6px;
-            padding-top: 6px;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-family: sans-serif;
-            color: #666666;
-
-            &--city{
-                font-weight: bold;
-            }
-        }
-        &__logo{
-            margin-top: 1%;
-            margin-left: 18%;
-            margin-right: 18%;
-        }
-        &__login{
-            padding-top: 18px;
-            float: right;
-
-            &--btnlogin{
-                background-color: white;
-                color: black;
-                border-radius: 10px;
-                border: 1px solid #666666;
-                height: 7%;
-            }
-        }
-        &-navbar{
-            margin: 2% 10% 0 10%;
-            &__menu{
-                list-style: none;
-            }
-            &__item{
-                float: left;
-                margin-right: 5%;
-                padding-top: 2%;
-                &--btnsearch__searchicon{
-                    width:52%;
-                }
-            }
-
-        }
-        
-
+  &-content{
+    &__weather{
+      padding-top: 18px;
     }
+    &__location{
+      line-height: 6px;
+      padding-top: 6px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: sans-serif;
+      color: #666666;
+
+      &--city{
+          font-weight: bold;
+      }
+    }   
+    &__logo{
+      margin-top: 1%;
+      margin-left: 18%;
+      margin-right: 18%;
+    }
+    &__login{
+      padding-top: 18px;
+      float: right;
+
+      &--btnlogin{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        border: 1px solid #666666;
+        height: 7%;
+      }
+    }
+    &-navbar{
+      margin: 2% 10% 0 10%;
+      &__menu{
+        list-style: none;
+      }
+      &__item{
+        float: left;
+        margin-right: 5%;
+        padding-top: 2%;
+        &--btnsearch__searchicon{
+            width:52%;
+        }
+      }
+    }
+  }
 }
