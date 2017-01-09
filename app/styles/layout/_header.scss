@@ -1,7 +1,9 @@
 .magazine-header{
   &-content{
     &__weather{
-      padding-top: 18px;
+      padding-top: 4%;
+      float:left;
+      margin-right: 2%;
     }
     &__location{
       line-height: 6px;
@@ -10,6 +12,8 @@
       font-size: 12px;
       font-family: sans-serif;
       color: #666666;
+      float: left;
+      margin-right: 125px;
 
       &--city{
           font-weight: bold;
@@ -33,17 +37,23 @@
       }
     }
     &-navbar{
-      margin: 2% 10% 0 10%;
       &__menu{
         list-style: none;
       }
       &__item{
         float: left;
-        margin-right: 5%;
+        margin-right: 4%;
         padding-top: 2%;
-        &--btnsearch__searchicon{
-            width:52%;
+        &--btnsearch{
+          &--img{
+           width: 20px;
+           height:10px;
+          }
         }
+      }
+      &--link{
+        text-decoration: none;
+        color: #000;
       }
     }
   }

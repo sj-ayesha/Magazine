@@ -1,23 +1,23 @@
 .grid
   header
     .magazine-header-content
-      div(class="1/4 grid__cell")
-        img.img-weather(src="../../images/header/weather.png", alt="")
-      div(class="1/4 grid__cell")
+      div(class="1/3 grid__cell")
+        .magazine-header-content__weather
+          img.magazine-header-content__weather--photo(src="../../images/header/weather.png", alt="")
         .magazine-header-content__location
           p.magazine-header-content__location--city New York, NY 74°F
           p.magazine-header-content__location--date Sunday, September 3, 2015
-      div(class="1/4 grid__cell")
+      div(class="1/3 grid__cell")
         .magazine-header-content__logo
           a.magazine-header-content__logo--link(href="#")
             img.magazine-header-content__logo--img(src="../../images/header/logo.png", alt="Silk")
-      div(class="1/4 grid__cell")
+      div(class="1/3 grid__cell")
         .magazine-header-content__login
           button.magazine-header-content__login--btnlogin Log In
             img.magazine-header-content__login--btnlogin__usericon(src="../../images/header/user-symbol.png", alt="user icon")
     .magazine-header-content-navbar
       div(class="4/4 grid__cell")
-        nav.magazine-header-content-navbar__items
+        nav.magazine-header-content-navbar-items
           ul.magazine-header-content-navbar__menu
             li.magazine-header-content-navbar__item
               a.magazine-header-content-navbar--link(href="#") News
@@ -39,4 +39,4 @@
               a.magazine-header-content-navbar--link(href="#") Archive
             li.magazine-header-content-navbar__item
               button.magazine-header-navbar__item--btnsearch
-                img.magazine-header-navbar__item--btnsearch__searchicon(src="../../images/header/magnifying-glass.png", alt="Search")
+                img.magazine-header-navbar__item--btnsearch__img(src="../../images/header/magnifying-glass.png", alt="Search" width="50%")

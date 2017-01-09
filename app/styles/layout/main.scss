@@ -1,0 +1,76 @@
+.magazine-main-content{
+  background-color: #efefef;
+  &__slider{
+    &-image{
+      margin: 2% 0 2% 0;
+      &--img{
+        position: relative;
+      }
+    }
+    &-caption{   
+      color: #fff;  
+      &__category{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &-details{
+        &__headings{
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        &__description{
+          position: absolute;
+          top: 83%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+      }
+      
+    }
+  }
+
+  //main content
+ &__article-box{
+   &__details-text{
+     font-family: serif;
+     &--p{
+      text-transform: uppercase;
+      font-size: smaller;
+      color: #e0a433;
+     }
+     &--h1{
+        font-size: 206%;
+        color: #333;
+    }
+   }
+   &__news{
+     margin-left: 15%;
+     &--h1{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #333;
+     }
+     &-highlight-image{
+       border-top: 1px solid #8c8b8b;
+       padding-top: 5%;
+     }
+     &-headlines{
+      &--big{
+        font-size: x-small;
+        color: #333;
+      }
+      &--small{
+        font-size: 30%;
+        color: #a3a3a4;
+      }
+     }
+   }
+ }
+}

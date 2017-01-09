@@ -3,20 +3,81 @@ extends ../base/layout.jade
 block main
   .grid
     .grid--center
-      .grid-slider
-        .grid-slider__slider-image
+      .magazine-main-content
+        .magazine-main-content__slider
           div(class="4/4 grid__cell")
-            p col 4/4
+            .magazine-main-content__slider-image
+              img.magazine-main-content__slider-image--img(src="../../images/main/slider.jpg")
+            .magazine-main-content__slider-caption
+              .magazine-main-content__slider-caption__category 
+                p.magazine-main-content__slider-caption__category--p Food & Drink
+              .magazine-main-content__slider-caption-details
+                .magazine-main-content__slider-caption-details__headings
+                  h1.magazine-main-content__slider-caption-details--h1 Hella narwhal Cosby swea.
+                .magazine-main-content__slider-caption-details__description
+                  p.magazine-main-content__slider-caption-details__description--p A few years ago, the Roots were musing over how to make their music-industry career pay.
+
   .grid
-    .grid--auto
-      .grid--flush
-        .grid-article-box
-          div(class="1/3 grid__cell")
-            p col 1/3
-          div(class="1/3 grid__cell")
-            p col 1/3
-          div(class="1/3 grid__cell")
-            p col 1/3
+    .magazine-main-content__article-box
+      div(class="3/4 grid__cell")
+        .grid
+          .magazine-main-content__article-box__details
+              div(class="1/2 grid__cell")
+                .magazine-main-content__article-box__details-text
+                  p.magazine-main-content__article-box__details-text--p Cars & Moto
+                  h1.magazine-main-content__article-box__details-text--h1 The 2015 Best-Dressed List: How Kate Middleton
+              div(class="1/2 grid__cell")
+                .magazine-main-content__article-box__details-image
+                  img.magazine-main-content__article-box__details-image--img(src="../../images/article/articlecar.jpg")
+      div(class="1/4 grid__cell")
+        .magazine-main-content__article-box__news
+          .grid
+            div(class="4/4 grid__cell")
+              .magazine-main-content__article-box__news--h1 News
+            .grid
+              .magazine-main-content__article-box__news-highlight-image
+                div(class="4/4 grid__cell")
+                  img.magazine-main-content__article-box__news-highlight-image--img(src="../../images/article/news.png")
+            .grid
+              .magazine-main-content__article-box__news-headlines
+                div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--small
+                    h1.magazine-main-content__article-box__news-headlines--small--h1 2 hours ago
+                div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--big
+                    h1.magazine-main-content__article-box__news-headlines--big--h1 Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene
+                    hr
+                  div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--small
+                    h1.magazine-main-content__article-box__news-headlines--small--h1 7 hours ago
+                div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--big
+                    h1.magazine-main-content__article-box__news-headlines--big--h1 The 2015 Post-San Diego Comic Con Guide
+                    hr
+                  div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--small
+                    h1.magazine-main-content__article-box__news-headlines--small--h1 9 hours ago
+                div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--big
+                    h1.magazine-main-content__article-box__news-headlines--big--h1 Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge
+                    hr
+                  div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--small
+                    h1.magazine-main-content__article-box__news-headlines--small--h1 1 day ago
+                div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--big
+                    h1.magazine-main-content__article-box__news-headlines--big--h1 If You Ask Siri What 0 Divided By 0 Is It Gets Brutal
+                    hr
+                  div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--small
+                    h1.magazine-main-content__article-box__news-headlines--small--h1 1 day ago
+                div(class="4/4 grid__cell")
+                  .magazine-main-content__article-box__news-headlines--big
+                    h1.magazine-main-content__article-box__news-headlines--big--h1 Dr. Dre Compton Review: A Grand Finale Game Changer
+                    hr
+            div(class="4/4 grid__cell news--footer")
+              button.magazine-main-content__article-box__news-btnviewall All News
+
   .grid
     .grid-article-box__small
       div(class="1/3 grid__cell")
