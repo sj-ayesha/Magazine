@@ -1,0 +1,22 @@
+mixin news-content(info)
+
+  -part = info.part;
+  -title = info.title || '';
+  -category = info.category || '';
+  -paragraph = info.paragraph || 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et beatae aliquam iure quibusdam rerum iusto, itaque assumenda vitae eveniet, voluptatibus culpa. Asperiores, porro! Omnis, pariatur eum repellendus quos assumenda provident.';
+  -photo = info.photo || '';
+
+  if part=='chair'
+    .main-content__article-box-bottom__container__chair-section
+      .main-content__article-box-bottom__container__chair-section--text
+        p.main-content__article-box-bottom__container__chair-section__p=category
+        h1.main-content__article-box-bottom__container__chair-section--h1=title
+        p.main-content__article-box-bottom__container__chair-section__p=paragraph
+        img.main-content__article-box-bottom__container__chair-section--img(src=photo)
+  else if part=='carbox'
+    .main-content__article-box__details__carbox-text-car
+      p.main-content__article-box__details__carbox-text-car__p=category
+      h1.main-content__article-box__details__carbox-text-car--h1=title
+      p.main-content__article-box__details__carbox-text-car__paragraph__p=paragraph
+    .main-content__article-box__details__carbox-image-car
+      img.main-content__article-box__details__carbox-image-car--img(src=photo)

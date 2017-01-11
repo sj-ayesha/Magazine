@@ -1,0 +1,12 @@
+mixin video-content(video)
+
+  -photo = video.photo || '';
+  -title = video.title || '';
+  -duration = video.duration || '';
+
+    
+    .main-content__article-box-video-section
+      img.main-content__article-box-video--img(src=photo)
+      img.main-content__article-box-video__play-icon--img(src="./app/images/video/icon-play.png")
+      p.main-content__article-box-video__title__p=title
+      p.main-content__article-box-video__title__p=duration

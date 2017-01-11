@@ -1,0 +1,22 @@
+mixin social-reaction(social)
+
+  -like = social.like || '';
+  -comment = social.comment || '';
+  -time = social.time || '';
+
+  .main-content__article-box__details__social__button-like
+    button.main-content__article-box__details__social__button-like
+      img.main-content__article-box__details__social__button-like--img(src="./app/images/article/icon-like.png")
+  .main-content__article-box__details__social__num-like
+      p.main-content__article-box__details__social__num-like__p=like
+
+  .main-content__article-box__details__social__button-comment
+    button.main-content__article-box__details__social__button-comment
+      img.main-content__article-box__details__social__button-comment--img(src="./app/images/article/icon-comment.png")
+  .main-content__article-box__details__social__num-comment
+      p.main-content__article-box__details__social__num-comment__p=comment
+
+  .main-content__article-box__details__social__icon-time
+    img.main-content__article-box__details__social__icon-time--img(src="./app/images/article/icon-time.png")
+  .main-content__article-box__details__social__icon-time
+    p.main-content__article-box__details__social__icon-time__p=time

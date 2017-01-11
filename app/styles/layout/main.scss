@@ -1,5 +1,13 @@
-.magazine-main-content{
-  background-color: #efefef;
+body{
+  background-color: $color-background-grey;
+}
+
+.horizontal-line{
+  border-top: 1px solid #8c8b8b;
+}
+
+.main-content{
+  margin: 0 10% 0 10%;
   &__slider{
     &-image{
       margin: 2% 0 2% 0;
@@ -8,7 +16,7 @@
       }
     }
     &-caption{   
-      color: #fff;  
+      color: $color-white;  
       &__category{
         position: absolute;
         top: 50%;
@@ -38,39 +46,263 @@
 
   //main content
  &__article-box{
-   &__details-text{
-     font-family: serif;
-     &--p{
-      text-transform: uppercase;
-      font-size: smaller;
-      color: #e0a433;
-     }
-     &--h1{
-        font-size: 206%;
-        color: #333;
+  margin-right: 4%;
+  margin-left: 6%;
+   &__details{
+      &__carbox{
+        background-color: $color-white;
+        padding-right: 28px;
+        &-text-car{
+          font-family: serif;
+            &__p{
+              text-transform: uppercase;
+              font-size: smaller;
+              color: $color-orange;
+            }
+            &--h1{
+                font-size: 206%;
+                color: $color-black;
+            }
+          &__paragraph{
+            &__p{
+              color: $color-paragraph-grey;
+            }
+          }
+        } 
+      }
+      &__three-sections{
+        padding-bottom: 2%;
+      }
+      &-gloves{
+        height: 387px;
+        background-color: $color-blue;
+        &--img{
+          padding-left: 24%;
+          padding-top: 9%;
+        }
+        &-readmore{
+          padding-left: 28%;
+          padding-top: 15%;
+          &__btnreadmore{
+            background-color: $color-light-blue;
+            border-radius: 10px;
+            color: $color-white;
+          }
+        }
+        &-text{
+          &__p{
+            text-align: center;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: smaller;
+            padding-top: 10px;
+          }
+          &--h1{
+            text-align: center;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: larger;
+            font-family: serif;
+            padding-top: 15px;
+              
+          }
+        }
+      }
+      &-travel{
+        &-box{
+          background-color: $color-white;
+        }
+        &-lake{
+          background-image: url("../../images/article/article-lake.png");
+          height:185px;
+        } 
+        &-alley{
+          background-image: url("../../images/article/article-alley.jpg");
+          height:185px;
+        }
+        &__article{
+          padding: 5%;
+          &-title{
+            &--h1{
+              font-size: larger;
+              color: $color-black;
+            } 
+          }
+          &-summary{
+            &__p{
+              color: $color-paragraph-grey;
+            }
+          }
+        }
+      
+        &__category{
+          &__p{
+            text-transform: uppercase;
+            color: $color-white;
+            font-size: smaller;
+            border-radius: 10px;
+            border: 1px solid $color-white;
+            width: 25%;
+            padding-left: 10px;
+          }
+        }
+      }
+      &-culture{
+        padding-top: 13px;
+        &__profile{
+          float: left;
+          padding-top: 11%;
+          padding-right: 7%;
+          
+          &__posted{
+            float: left;
+            &-hour{
+              &__p{
+                color: $color-paragraph-grey;
+                font-size: small;
+              }
+            }
+            &__name{
+              &__p{
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      &__social{
+        display: flex;
+        border-top: 1px solid $color-grey;
+        &__button-like{
+          border: none;
+          background-color: $color-white;
+          padding-top: 4px;
+        }
+        &__button-comment{
+          border: none;
+          background-color: $color-white;
+          padding-top: 4px;
+        }
+        &__num-like{
+          padding-right: 10px;
+          &__p{
+            font-size: x-small;
+            color: $color-paragraph-grey;
+          }
+        }
+        &__num-comment{
+          padding-right: 10px;
+          &__p{
+            font-size: x-small;
+            color: $color-paragraph-grey;
+          }
+        }
+        &__icon-time{
+          padding-left: 5px;
+          padding-top: 0px;
+          &--img{
+            padding-top: 9px;
+          }
+          &__p{
+            font-size: x-small;
+            color: $color-paragraph-grey;
+          }
+        }
+      }
     }
-   }
-   &__news{
-     margin-left: 15%;
-     &--h1{
+  &__news{
+    &-section{
+      padding-left: 16%;
+      padding-right: 5%;
+      padding-top: 5%;
+    }
+    background-color: $color-white;
+    &--h1{
       text-transform: uppercase;
       font-weight: bold;
-      color: #333;
-     }
-     &-highlight-image{
-       border-top: 1px solid #8c8b8b;
-       padding-top: 5%;
-     }
-     &-headlines{
+      color: $color-black;
+    }
+    &-highlight-image{
+      padding-top: 5%;
+    }
+    &-headlines{
       &--big{
-        font-size: x-small;
-        color: #333;
+        font-size: 50%;
+        color: $color-black;
       }
       &--small{
         font-size: 30%;
-        color: #a3a3a4;
+        color: $color-grey;
       }
-     }
+      &__footer{
+        background-color: $color-black;
+        &-btn-news{
+          &__btnviewall{
+            background-color: $color-black;
+            border: none;
+            display: block;
+            color: $color-white;
+            height: 40px;
+          }
+          &__p{
+            margin-left: 47px;
+            margin-right: 60px;
+            margin-top: 11px;
+          }
+        }
+        
+      }
+    }
+    
+  } 
+  
+  &-bottom{
+     &__container{
+      &__chair{
+        padding-left: 6%;
+        padding-right: 4%;
+        &-section{
+          margin-top: 13px;
+          display: flex;
+          background-color: $color-white;
+          &--text{
+            padding: 6%;
+          }
+          &--h1{
+            font-size: x-large;
+            font-family: sans-serif;
+          }
+        }
+      }
+      &-travel{
+        background-image: url("../../images/article/articlelake.png");
+        height:185px;
+        &__article{
+          &-title{
+            &--h1{
+              font-size: larger;
+              color: $color-black;
+            } 
+          }
+          &-summary{
+            &__p{
+              color: $color-paragraph-grey;
+            }
+          }
+        } 
+        &__category{
+          &__p{
+            text-transform: uppercase;
+            color: $color-white;
+            font-size: smaller;
+            border-radius: 10px;
+            border: 1px solid $color-white;
+            width: 25%;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
    }
  }
 }

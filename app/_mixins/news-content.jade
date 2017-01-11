@@ -1,0 +1,14 @@
+mixin news-content(options)
+
+  -type = options.type || '';
+  -headline = options.headline || '';
+  -time = options.time || '';
+
+  if type=='small'
+    .main-content__article-box__news-headlines--small
+      h1.main-content__article-box__news-headlines--small--h1=time
+  else
+    .main-content__article-box__news-headlines--big
+      h1.main-content__article-box__news-headlines--big--h1=headline
+    .horizontal-line
+    

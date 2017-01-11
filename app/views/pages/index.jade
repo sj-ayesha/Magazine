@@ -1,110 +1,221 @@
 extends ../base/layout.jade
 
 block main
-  .grid
-    .grid--center
-      .magazine-main-content
-        .magazine-main-content__slider
+  .main-content
+    .grid
+      .grid--center
+        .main-content__slider
+        
           div(class="4/4 grid__cell")
-            .magazine-main-content__slider-image
-              img.magazine-main-content__slider-image--img(src="../../images/main/slider.jpg")
-            .magazine-main-content__slider-caption
-              .magazine-main-content__slider-caption__category 
-                p.magazine-main-content__slider-caption__category--p Food & Drink
-              .magazine-main-content__slider-caption-details
-                .magazine-main-content__slider-caption-details__headings
-                  h1.magazine-main-content__slider-caption-details--h1 Hella narwhal Cosby swea.
-                .magazine-main-content__slider-caption-details__description
-                  p.magazine-main-content__slider-caption-details__description--p A few years ago, the Roots were musing over how to make their music-industry career pay.
+            .main-content__slider-image
+              img.main-content__slider-image--img(src="./app/images/main/slider.jpg")
+            .main-content__slider-caption
+              .main-content__slider-caption__category 
+                p.main-content__slider-caption__category__p Food &amp; Drink
+              .main-content__slider-caption-details
+                .main-content__slider-caption-details__headings
+                  h1.main-content__slider-caption-details--h1 Hella narwhal Cosby swea.
+                .main-content__slider-caption-details__description
+                  p.main-content__slider-caption-details__description__p A few years ago, the Roots were musing over how to make their music-industry career pay.
 
-  .grid
-    .magazine-main-content__article-box
-      div(class="3/4 grid__cell")
-        .grid
-          .magazine-main-content__article-box__details
-              div(class="1/2 grid__cell")
-                .magazine-main-content__article-box__details-text
-                  p.magazine-main-content__article-box__details-text--p Cars & Moto
-                  h1.magazine-main-content__article-box__details-text--h1 The 2015 Best-Dressed List: How Kate Middleton
-              div(class="1/2 grid__cell")
-                .magazine-main-content__article-box__details-image
-                  img.magazine-main-content__article-box__details-image--img(src="../../images/article/articlecar.jpg")
-      div(class="1/4 grid__cell")
-        .magazine-main-content__article-box__news
+    .grid
+      .main-content__article-box
+        div(class="3/4 grid__cell")
           .grid
-            div(class="4/4 grid__cell")
-              .magazine-main-content__article-box__news--h1 News
-            .grid
-              .magazine-main-content__article-box__news-highlight-image
-                div(class="4/4 grid__cell")
-                  img.magazine-main-content__article-box__news-highlight-image--img(src="../../images/article/news.png")
-            .grid
-              .magazine-main-content__article-box__news-headlines
-                div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--small
-                    h1.magazine-main-content__article-box__news-headlines--small--h1 2 hours ago
-                div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--big
-                    h1.magazine-main-content__article-box__news-headlines--big--h1 Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene
-                    hr
-                  div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--small
-                    h1.magazine-main-content__article-box__news-headlines--small--h1 7 hours ago
-                div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--big
-                    h1.magazine-main-content__article-box__news-headlines--big--h1 The 2015 Post-San Diego Comic Con Guide
-                    hr
-                  div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--small
-                    h1.magazine-main-content__article-box__news-headlines--small--h1 9 hours ago
-                div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--big
-                    h1.magazine-main-content__article-box__news-headlines--big--h1 Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge
-                    hr
-                  div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--small
-                    h1.magazine-main-content__article-box__news-headlines--small--h1 1 day ago
-                div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--big
-                    h1.magazine-main-content__article-box__news-headlines--big--h1 If You Ask Siri What 0 Divided By 0 Is It Gets Brutal
-                    hr
-                  div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--small
-                    h1.magazine-main-content__article-box__news-headlines--small--h1 1 day ago
-                div(class="4/4 grid__cell")
-                  .magazine-main-content__article-box__news-headlines--big
-                    h1.magazine-main-content__article-box__news-headlines--big--h1 Dr. Dre Compton Review: A Grand Finale Game Changer
-                    hr
-            div(class="4/4 grid__cell news--footer")
-              button.magazine-main-content__article-box__news-btnviewall All News
+            .main-content__article-box__details
+              .main-content__article-box__details__carbox
+                div(class="1/2 grid__cell")
+                  .main-content__article-box__details__carbox-text-car
+                    p.main-content__article-box__details__carbox-text-car__p Cars & Moto
+                    h1.main-content__article-box__details__carbox-text-car--h1 The 2015 Best-Dressed List: How Kate Middleton
+                    p.main-content__article-box__details__carbox-text-car__paragraph__p Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
-  .grid
-    .grid-article-box__small
-      div(class="1/3 grid__cell")
-        p col 1/3
-      div(class="1/3 grid__cell")
-        p col 1/3
-      div(class="1/3 grid__cell")
-        p col 1/3
-  .grid
-    .grid--flush
-      .grid-article-box__small-flush
+                div(class="1/2 grid__cell")
+                  .main-content__article-box__details__carbox-image-car
+                    img.main-content__article-box__details__carbox-image-car--img(src="./app/images/article/article-car.jpg")
+                    
+              .main-content__article-box__details__three-sections
+                div(class="1/3 grid__cell")  
+                  .main-content__article-box__details-gloves
+                    p.main-content__article-box__details-gloves-text__p style
+                    h1.main-content__article-box__details-gloves-text--h1 Offbeat Portraits Give Stars
+                    img.main-content__article-box__details-gloves--img(src="./app/images/article/article-gloves.png")
+                    .main-content__article-box__details-gloves-readmore
+                      button.main-content__article-box__details-gloves-readmore__btnreadmore Read More
+                
+                div(class="1/3 grid__cell")
+                  .main-content__article-box__details-travel-box
+                    .main-content__article-box__details-travel-lake
+                      .main-content__article-box__details-travel__text
+                        .main-content__article-box__details-travel__category
+                          p.main-content__article-box__details-travel__category__p Travel     
+                    .main-content__article-box__details-travel__article
+                      h1.main-content__article-box__details-travel__article-title--h1 Best of Minnesota 2015: Revealing what rocks
+                      p.main-content__article-box__details-travel__article-summary__p I whipped the Scotch tape from my pocket and said
+
+                      .main-content__article-box__details__social
+                        +social-reaction({
+                          like:'298',
+                          comment:'12',
+                          time: '5 hours ago'
+                        })
+
+                div(class="1/3 grid__cell")
+                  .main-content__article-box__details-culture
+                    img.main-content__article-box__details-culture--img(src="./app/images/article/article-lantern.jpg")
+                    .main-content__article-box__details-culture__profile
+                      img.main-content__article-box__details-culture__profile--img(src="./app/images/article/profile-pic.png")
+                    .main-content__article-box__details-culture__profile__posted
+                      p.header-content__article-box__details-culture__profile__name__p Jason George
+                      p.header-content__article-box__details-culture__profile__posted-hour__p 7 hours ago
+            
         div(class="1/4 grid__cell")
-          p col 1/4
+          .main-content__article-box__news
+            .main-content__article-box__news-section
+              .grid
+                div(class="4/4 grid__cell")
+                  .main-content__article-box__news--h1 News
+
+                .grid
+                  .main-content__article-box__news-highlight-image
+                    div(class="4/4 grid__cell")
+                      img.main-content__article-box__news-highlight-image--img(src="./app/images/article/article-news.png")
+
+                .grid
+                  .main-content__article-box__news-headlines
+                    .main-content__article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'2 hours ago'
+                        })
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene'
+                        }) 
+                    .main-content__article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'7 hours ago'
+                        }) 
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'The 2015 Post-San Diego Comic Con Guide'
+                        })  
+                    .main-content__article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'9 hours ago'
+                        })  
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge'
+                        }) 
+                    .main-content__article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'1 day ago'
+                        }) 
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'If You Ask Siri What 0 Divided By 0 Is It Gets Brutal'
+                        }) 
+                    .main-content__article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'1 day ago'
+                        })
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'Dr. Dre Compton Review: A Grand Finale Game Changer'
+                        }) 
+
+            .main-content__article-box__news-headlines__footer
+              div(class="4/4 grid__cell")
+                .main-content__article-box__news-headlines__footer-btn-news
+                  button.main-content__article-box__news-headlines__footer-btn-news__btnviewall 
+                    p.main-content__article-box__news-headlines__footer-btn-news__p All News
+        
+      .main-content__article-box-bottom
+        .grid
+          .main-content__article-box-bottom__container
+            .main-content__article-box-bottom__container__chair
+              .div(class="2/4 grid__cell")
+                .main-content__article-box-bottom__container__chair-section
+                  .main-content__article-box-bottom__container__chair-section--text
+                    p.main-content__article-box-bottom__container__chair-section__p Style
+                    h1.main-content__article-box-bottom__container__chair-section--h1 Eames Molded Fiberglass Side Chair
+                    p.main-content__article-box-bottom__container__chair-section__p The Eames Molded Fiberglass Side Chair with Wire Base is an iconic piece of American design history.
+                  .main-content__article-box-bottom__container__chair-section--photo
+                    img.main-content__article-box-bottom__container__chair-section--img(src="./app/images/article/article-chair.jpg")
+                    
+              .div(class="1/4 grid__cell")
+                .main-content__article-box__details-travel-box
+                  .main-content__article-box__details-travel-lake
+                    .main-content__article-box__details-travel__text
+                      .main-content__article-box__details-travel__category
+                        p.main-content__article-box__details-travel__category__p Travel     
+                  .main-content__article-box__details-travel__article
+                    h1.main-content__article-box__details-travel__article-title--h1 Best of Minnesota 2015: Revealing what rocks
+                    p.main-content__article-box__details-travel__article-summary__p I whipped the Scotch tape from my pocket and said
+
+                  .main-content__article-box__details__social
+                    +social-reaction({
+                      like:'298',
+                      comment:'12',
+                      time: '5 hours ago'
+                    })
+                
+              .div(class="1/4 grid__cell")
+                .main-content__article-box__details-travel-box
+                  .main-content__article-box__details-travel-alley
+                    .main-content__article-box__details-travel__text
+                      .main-content__article-box__details-travel__category
+                        p.main-content__article-box__details-travel__category__p Travel     
+                  .main-content__article-box__details-travel__article
+                    h1.main-content__article-box__details-travel__article-title--h1 Reading Hemingway's Personal Letters
+                    p.main-content__article-box__details-travel__article-summary__p There isn't much that hasn't been said about Ernest Miller
+
+                  .main-content__article-box__details__social
+                    +social-reaction({
+                      like:'298',
+                      comment:'12',
+                      time: '5 hours ago'
+                    })
+      
+      .main-content__article-box-video
         div(class="1/4 grid__cell")
-          p col 1/4
+          p.main-content__article-box-video__p Video      
+            +video-content({
+              photo:'./app/images/video/video-spring.png',
+              title: 'The Big Black Book Spring',
+              duration: '12:00'
+            }) 
         div(class="1/4 grid__cell")
-          p col 1/4
+          +video-content({
+              photo:'./app/images/video/video-wheat.png',
+              title: 'Behing The Scenes Video',
+              duration: '12:00'
+            }) 
         div(class="1/4 grid__cell")
-          p col 1/4
-  .grid
-    .grid-article-box__video
-      div(class="1/4 grid__cell")
-        p col 1/4
-      div(class="1/4 grid__cell")
-        p col 1/4
-      div(class="1/4 grid__cell")
-        p col 1/4
-      div(class="1/4 grid__cell")
-        p col 1/4
-  
+          +video-content({
+              photo:'./app/images/video/video-sandwich.png',
+              title: 'Michelin-Starred French',
+              duration: '12:00'
+            }) 
+        div(class="1/4 grid__cell")
+          +video-content({
+              photo:'./app/images/video/video-watch.png',
+              title: 'the Smartwatch Wars',
+              duration: '12:00'
+            }) 
+    
