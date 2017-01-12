@@ -1,3 +1,40 @@
 footer{
   background-color: $color-white;
 }
+
+.bottom{
+  &-content{
+    padding: 4% 5% 4% 5%;
+    &-text{
+      padding-top: 15%;
+      &__p{
+      color: $color-paragraph-grey;
+      font-size: 12px;
+      text-align: justify;
+      padding-top: 7%;
+      }
+    }
+    &__list{
+      list-style-type: none;
+      text-align: justify;
+      font-size: 15px;
+      line-height: 30px;
+      &__item{
+        font-size: small;
+        &-text{
+          &__p{
+            font-weight: bold;
+            font-size: 17px;
+          }
+        }
+        &--link{
+          color: $color-paragraph-grey;
+          text-decoration: none;
+        }
+        &--span{
+          color: #3078c0;
+        }
+      }
+    }
+  }
+}

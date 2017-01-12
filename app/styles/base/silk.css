@@ -787,8 +787,8 @@ body {
   border-top: 1px solid #8c8b8b;
 }
 
-.main-content {
-  margin: 0 10% 0 10%;
+.main-content-articles {
+  padding: 0 10% 0 10%;
 }
 
 .main-content__slider-image {
@@ -828,8 +828,8 @@ body {
 }
 
 .main-content__article-box {
-  margin-right: 4%;
-  margin-left: 6%;
+  padding-right: 50px;
+  padding-left: 70px;
 }
 
 .main-content__article-box__details__carbox {
@@ -900,6 +900,16 @@ body {
 
 .main-content__article-box__details-travel-box {
   background-color: #fff;
+}
+
+.main-content__article-box__details-travel-box-alley {
+  padding-bottom: 4px;
+  background-color: #fff;
+}
+
+.main-content__article-box__details-travel-house {
+  background-image: url("../../images/article/article-house.png");
+  height: 185px;
 }
 
 .main-content__article-box__details-travel-lake {
@@ -1055,15 +1065,20 @@ body {
   margin-top: 11px;
 }
 
+.main-content__article-box-bottom {
+  padding-bottom: 25px;
+}
+
 .main-content__article-box-bottom__container__chair {
-  padding-left: 6%;
-  padding-right: 4%;
+  padding-left: 70px;
+  padding-right: 50px;
 }
 
 .main-content__article-box-bottom__container__chair-section {
   margin-top: 13px;
   display: flex;
   background-color: #fff;
+  padding-bottom: 60px;
 }
 
 .main-content__article-box-bottom__container__chair-section--text {
@@ -1078,6 +1093,10 @@ body {
 .main-content__article-box-bottom__container-travel {
   background-image: url("../../images/article/articlelake.png");
   height: 185px;
+}
+
+.main-content__article-box-bottom__container-travel-box {
+  padding-bottom: 22px;
 }
 
 .main-content__article-box-bottom__container-travel__article-title--h1 {
@@ -1099,6 +1118,87 @@ body {
   padding-left: 10px;
 }
 
+.main-content__article-box-video {
+  background-color: #232324;
+  margin-bottom: 25px;
+  padding-left: 186px;
+  padding-right: 186px;
+}
+
+.main-content__article-box-video__p {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-content__article-box-video-and-play-section {
+  position: relative;
+}
+
+.main-content__article-box-video-and-play-section__play-icon--img {
+  position: absolute;
+  top: 34%;
+  left: 34%;
+}
+
+.main-content__article-box-video-and-play-text {
+  color: #fff;
+}
+
+.main-content__article-box-video-and-play-text__title__p {
+  float: left;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.main-content__article-box-video-and-play-text__time__p {
+  float: right;
+  font-size: 13px;
+  padding-left: 25px;
+  color: #3e3e3e;
+  font-weight: bolder;
+}
+
 footer {
   background-color: #fff;
+}
+
+.bottom-content {
+  padding: 4% 5% 4% 5%;
+}
+
+.bottom-content-text {
+  padding-top: 15%;
+}
+
+.bottom-content-text__p {
+  color: #b9b9ba;
+  font-size: 12px;
+  text-align: justify;
+  padding-top: 7%;
+}
+
+.bottom-content__list {
+  list-style-type: none;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.bottom-content__list__item {
+  font-size: small;
+}
+
+.bottom-content__list__item-text__p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.bottom-content__list__item--link {
+  color: #b9b9ba;
+  text-decoration: none;
+}
+
+.bottom-content__list__item--span {
+  color: #3078c0;
 }
