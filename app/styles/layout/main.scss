@@ -13,37 +13,41 @@ body{
   &__slider{
     &-image{
       margin: 2% 0 2% 0;
-      &--img{
-        position: relative;
-      }
+      position: relative;
     }
-    &-caption{   
-      color: $color-white;  
-      &__category{
+    &-caption{
+      &__p{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+        top: 5%;
+        left: 45%;
+        color: white;
+        font-weight: bold;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        width: 140px;
       }
-      &-details{
-        &__headings{
+      &__headings{
+        &--h1{
           position: absolute;
-          top: 75%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
-        &__description{
-          position: absolute;
-          top: 83%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
+          top: 31%;
+          color: white;
+          left: 25%;
+          font-size: 50px;
+          font-family: serif;
         }
       }
-      
+      &__description{
+        &__p{
+          position: absolute;
+          top: 50%;
+          left: 32%;
+          color: white;
+          width: 39%;
+        }
+      }
+            
     }
+   
   }
 
   //main content
@@ -225,6 +229,7 @@ body{
       padding-left: 16%;
       padding-right: 5%;
       padding-top: 5%;
+      padding-bottom: 28px
     }
     background-color: $color-white;
     &--h1{
