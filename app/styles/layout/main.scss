@@ -1,156 +1,173 @@
-body{
-  background-color: $color-background-grey;
+body {
+  background-color: $color-background;
+  font-family: $font-family-master;
 }
 
-.horizontal-line{
-  border-top: 1px solid #8c8b8b;
+.horizontal-line {
+  border-top: 1px solid $color-info;
 }
 
-.main-content{
-  &-articles{
+
+.main-content {
+  &-articles {
     padding: 0 10% 0 10%;
   }
-  &__slider{
-    &-image{
+
+  &__slider {
+    &-image {
       margin: 2% 0 2% 0;
       position: relative;
     }
-    &-caption{
-      &__p{
+
+    &-caption {
+      &__p {
         position: absolute;
         top: 5%;
         left: 45%;
-        color: white;
+        color: $color-white;
         font-weight: bold;
-        border: 1px solid #fff;
+        border: 1px solid $color-white;
         border-radius: 10px;
         width: 140px;
       }
-      &__headings{
-        &--h1{
+
+      &__headings {
+        &--h1 {
           position: absolute;
           top: 31%;
-          color: white;
+          color: $color-white;
           left: 25%;
           font-size: 50px;
-          font-family: serif;
         }
       }
-      &__description{
-        &__p{
+
+      &__description {
+        &__p {
           position: absolute;
           top: 50%;
           left: 32%;
-          color: white;
+          color: $color-white;
           width: 39%;
         }
-      }
-            
-    }
-   
+      }        
+    }  
   }
 
   //main content
- &__article-box{
+ &__article-box {
   padding-right: 50px;
   padding-left: 70px;
-  &__details{
-    &__carbox{
+
+  &__details {
+
+    &__carbox {
       background-color: $color-white;
       padding-right: 28px;
-      &-text-car{
-        font-family: serif;
-          &__p{
-            text-transform: uppercase;
-            font-size: smaller;
-            color: $color-orange;
-          }
-          &--h1{
-              font-size: 206%;
-              color: $color-black;
-          }
-        &__paragraph{
-          &__p{
-            color: $color-paragraph-grey;
+
+      &-text-car {
+        &__p {
+          text-transform: uppercase;
+          font-size: smaller;
+          color: $color-orange;
+        }
+        &--h1 {
+            font-size: 206%;
+            color: $color-black-light;
+        }
+        
+        &__paragraph {
+          &__p {
+            color: $color-paragraph;
           }
         }
       } 
     }
-    &__three-sections{
+
+    &__three-sections {
       padding-bottom: 2%;
     }
-    &-gloves{
+
+    &-gloves {
       height: 387px;
       background-color: $color-blue;
-      &--img{
+
+      &--img {
         padding-left: 24%;
         padding-top: 9%;
       }
-      &-readmore{
+
+      &-readmore {
         padding-left: 28%;
         padding-top: 15%;
-        &__btnreadmore{
-          background-color: $color-light-blue;
+
+        &__btnreadmore {
+          background-color: $color-blue-light;
           border-radius: 10px;
           color: $color-white;
         }
       }
-      &-text{
-        &__p{
+
+      &-text {
+        &__p {
           text-align: center;
           color: $color-white;
           text-transform: uppercase;
           font-size: smaller;
           padding-top: 10px;
         }
-        &--h1{
+
+        &--h1 {
           text-align: center;
           color: $color-white;
           text-transform: uppercase;
           font-size: larger;
-          font-family: serif;
-          padding-top: 15px;
-            
+          padding-top: 15px; 
         }
       }
     }
-    &-travel{
-      &-box{
+
+    &-travel {
+      &-box {
         background-color: $color-white;
-        &-alley{
+        &-alley {
           padding-bottom: 4px;
           background-color: $color-white;
         }
       }
-      &-house{
+
+      &-house {
         background-image: url("../../images/article/article-house.png");
         height:185px;
       }
-      &-lake{
+
+      &-lake {
         background-image: url("../../images/article/article-lake.png");
         height:185px;
       } 
-      &-alley{
+
+      &-alley {
         background-image: url("../../images/article/article-alley.jpg");
         height:185px;
       }
-      &__article{
+
+      &__article {
         padding: 5%;
-        &-title{
-          &--h1{
+
+        &-title {
+          &--h1 {
             font-size: larger;
-            color: $color-black;
+            color: $color-black-light;
           } 
         }
-        &-summary{
-          &__p{
-            color: $color-paragraph-grey;
+        &-summary {
+          &__p {
+            color: $color-paragraph;
           }
         }
       }
     
-      &__category{
-        &__p{
+      &__category {
+        &__p {
           text-transform: uppercase;
           color: $color-white;
           font-size: smaller;
@@ -161,156 +178,185 @@ body{
         }
       }
     }
-    &-culture{
+
+    &-culture {
       padding-top: 13px;
-      &__profile{
+
+      &__profile {
         float: left;
         padding-top: 11%;
         padding-right: 7%;
         
-        &__posted{
+        &__posted {
           float: left;
-          &-hour{
-            &__p{
-              color: $color-paragraph-grey;
+
+          &-hour {
+            &__p {
+              color: $color-paragraph;
               font-size: small;
             }
           }
-          &__name{
-            &__p{
+          &__name {
+            &__p {
               font-weight: bold;
             }
           }
         }
       }
     }
-    &__social{
+
+    &__social {
       display: flex;
-      border-top: 1px solid $color-grey;
-      &__button-like{
+      border-top: 1px solid $color-info;
+
+      &__button-like {
         border: none;
         background-color: $color-white;
         padding-top: 4px;
       }
-      &__button-comment{
+
+      &__button-comment {
         border: none;
         background-color: $color-white;
         padding-top: 4px;
       }
-      &__num-like{
+
+      &__num-like {
         padding-right: 10px;
-        &__p{
+
+        &__p {
           font-size: x-small;
-          color: $color-paragraph-grey;
+          color: $color-paragraph;
         }
       }
-      &__num-comment{
+
+      &__num-comment {
         padding-right: 10px;
-        &__p{
+
+        &__p {
           font-size: x-small;
-          color: $color-paragraph-grey;
+          color: $color-paragraph;
         }
       }
-      &__icon-time{
+
+      &__icon-time {
         padding-left: 5px;
         padding-top: 0px;
-        &--img{
+
+        &--img {
           padding-top: 9px;
         }
-        &__p{
+
+        &__p {
           font-size: x-small;
-          color: $color-paragraph-grey;
+          color: $color-paragraph;
         }
       }
     }
   }
-  &__news{
-    &-section{
+
+  &__news { 
+    background-color: $color-white;
+
+    &-section {
       padding-left: 16%;
       padding-right: 5%;
       padding-top: 5%;
       padding-bottom: 28px
     }
-    background-color: $color-white;
-    &--h1{
+
+    &--h1 {
       text-transform: uppercase;
       font-weight: bold;
-      color: $color-black;
+      color: $color-black-light;
     }
-    &-highlight-image{
+
+    &-highlight-image {
       padding-top: 5%;
     }
-    &-headlines{
-      &--big{
+
+    &-headlines {
+      &--big {
         font-size: 50%;
-        color: $color-black;
+        color: $color-black-light;
       }
-      &--small{
+      
+      &--small {
         font-size: 30%;
-        color: $color-grey;
+        color: $color-info;
       }
-      &__footer{
-        background-color: $color-black;
-        &-btn-news{
-          &__btnviewall{
-            background-color: $color-black;
+
+      &__footer {
+        background-color: $color-black-light;
+
+        &-btn-news {
+          &__btnviewall {
+            background-color: $color-black-light;
             border: none;
             display: block;
             color: $color-white;
             height: 40px;
           }
-          &__p{
+
+          &__p {
             margin-left: 47px;
             margin-right: 60px;
             margin-top: 11px;
           }
         }
-        
       }
     }  
   } 
   
-  &-bottom{
+  &-bottom {
     padding-bottom: 25px;
-    &__container{
-      &__chair{
+
+    &__container {
+      &__chair {
         padding-left: 70px;
         padding-right: 50px;
-        &-section{
+
+        &-section {
           margin-top: 13px;
           display: flex;
           background-color: $color-white;
           padding-bottom: 60px;
-          &--text{
+
+          &--text {
             padding: 6%;
           }
-          &--h1{
+
+          &--h1 {
             font-size: x-large;
-            font-family: sans-serif;
           }
         }
       }
-      &-travel{
-        &-box{
-          padding-bottom: 22px;
-        }
+
+      &-travel {
         background-image: url("../../images/article/articlelake.png");
         height:185px;
-        &__article{
-          &-title{
-            &--h1{
+
+        &-box {
+          padding-bottom: 22px;
+        }
+
+        &__article {
+          &-title {
+            &--h1 {
               font-size: larger;
-              color: $color-black;
+              color: $color-black-light;
             } 
           }
-          &-summary{
-            &__p{
-              color: $color-paragraph-grey;
+
+          &-summary {
+            &__p {
+              color: $color-paragraph;
             }
           }
         } 
-        &__category{
-          &__p{
+
+        &__category {
+          &__p {
             text-transform: uppercase;
             color: $color-white;
             font-size: smaller;
@@ -323,42 +369,49 @@ body{
       }
     }
    }
-  &-video{
-    background-color: #232324;
+
+  &-video {
+    background-color: $color-black-light;
     margin-bottom: 25px;
     padding-left: 186px;
     padding-right: 186px;
-    &__p{
+
+    &__p {
       color: $color-white;
       font-weight: bold;
       text-transform: uppercase;
     }
-    &-and-play{
-      &-section{
+
+    &-and-play {
+      &-section {
         position: relative;
-        &__play-icon{
-          &--img{
+
+        &__play-icon {
+          &--img {
             position:absolute;
             top:34%;
             left:34%;
           }
         }
       }
-      &-text{
+
+      &-text {
         color: $color-white;
-        &__title{
-          &__p{
+
+        &__title {
+          &__p {
             float: left;
             font-weight: bolder;
             font-size: 13px;
           }
         }
-        &__time{
-          &__p{
+
+        &__time {
+          &__p {
             float:right;
             font-size: 13px;
             padding-left: 25px;
-            color: #3e3e3e;
+            color: $color-info;
             font-weight: bolder;
           }
         }

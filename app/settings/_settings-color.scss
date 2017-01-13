@@ -1,8 +1,8 @@
-$color-black: #333;
+$color-black-light: #333;
 $color-white: #fff;
 
 $color-grey: #a3a3a4;
-$color-background-grey: #efefef;
+$color-grey-lighter: #efefef;
 $color-grey-light: #b9b9ba;
 
 
@@ -13,6 +13,10 @@ $color-blue-light: #4c8ac7;
 
 
 $color-paragraph: $color-grey-light;
+
+$color-background: $color-grey-lighter;
+
+$color-info: $color-grey;
 
 
 
