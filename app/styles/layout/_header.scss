@@ -40,6 +40,9 @@
       border-radius: 10px;
       border: 1px solid $color-info;
       height: 7%;
+      &--user-icon{
+        float: left;
+      }
     }
   }
 
@@ -57,7 +60,10 @@
       margin-right: 4%;
       padding-top: 2%;
 
-      &__btnsearch{
+      &__btn-search {
+        background-color: white;
+        border: none;
+
         &--img {
         width: 20px;
         height: 10px;

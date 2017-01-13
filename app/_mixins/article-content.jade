@@ -1,0 +1,18 @@
+mixin travel-article-category(category)
+
+  -name = category.name || '';
+
+  .main-content__article-box__details-travel__text
+    .main-content__article-box__details-travel__category
+      p.main-content__article-box__details-travel__category__p=name
+
+mixin travel-article-summary(text)
+
+  -title = text.title || '';
+  -summary = text.summary || '';
+
+  .main-content__article-box__details-travel__text
+    h1.main-content__article-box__details-travel__article-title--h1=title
+    p.main-content__article-box__details-travel__article-summary__p=summary
+
+   

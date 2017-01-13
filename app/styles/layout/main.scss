@@ -21,13 +21,14 @@ body {
 
     &-caption {
       &__p {
+        padding: 5px 0 5px 0;
         position: absolute;
         top: 5%;
-        left: 45%;
+        left: 470px;
         color: $color-white;
         font-weight: bold;
         border: 1px solid $color-white;
-        border-radius: 10px;
+        border-radius: 17px;
         width: 140px;
       }
 
@@ -49,7 +50,22 @@ body {
           color: $color-white;
           width: 39%;
         }
-      }        
+      } 
+
+      &__read-more {
+        &--link {
+          position: absolute;
+          right: 470px;
+          bottom: 145px;
+          text-decoration: none;
+          color: $color-white;
+          border: 1px solid $color-white;
+          border-radius: 22px;
+          width: 130px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }       
     }  
   }
 
@@ -180,27 +196,24 @@ body {
     }
 
     &-culture {
-      padding-top: 13px;
+      padding-top: 13px;   
+      background-color: $color-white;
+      padding-bottom: 28px;
 
       &__profile {
-        float: left;
-        padding-top: 11%;
         padding-right: 7%;
+        display: flex;
         
-        &__posted {
-          float: left;
+        &--img{
+          width: 35px;
+          height: 35px;
+          padding-top: 18px;
+        }
 
-          &-hour {
-            &__p {
-              color: $color-paragraph;
-              font-size: small;
-            }
-          }
-          &__name {
-            &__p {
-              font-weight: bold;
-            }
-          }
+        &__posted{
+          padding-left: 9px;
+          font-size: smaller;
+          color: $color-info;
         }
       }
     }
