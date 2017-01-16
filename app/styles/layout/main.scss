@@ -10,12 +10,14 @@ body {
 
 .main-content {
   &-articles {
-    padding: 0 10% 0 10%;
+    padding: 0 136px 0 136px;
   }
+
+  //slider
 
   &__slider {
     &-image {
-      margin: 2% 0 2% 0;
+      padding: 15px 0 15px 0;
       position: relative;
     }
 
@@ -23,7 +25,7 @@ body {
       &__p {
         padding: 5px 0 5px 0;
         position: absolute;
-        top: 5%;
+        top: 35px;
         left: 470px;
         color: $color-white;
         font-weight: bold;
@@ -35,9 +37,9 @@ body {
       &__headings {
         &--h1 {
           position: absolute;
-          top: 31%;
+          top: 166px;
           color: $color-white;
-          left: 25%;
+          left: 269px;
           font-size: 50px;
         }
       }
@@ -45,10 +47,10 @@ body {
       &__description {
         &__p {
           position: absolute;
-          top: 50%;
-          left: 32%;
+          top: 267px;
+          left: 345px;
           color: $color-white;
-          width: 39%;
+          width: 420px;
         }
       } 
 
@@ -62,18 +64,37 @@ body {
           border: 1px solid $color-white;
           border-radius: 22px;
           width: 130px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding: 10px 0 10px 0;
         }
-      }       
-    }  
+      }     
+
+    } 
+
+    &-navigation{
+      display: flex;
+      position: absolute;
+      top: 455px;
+      left: 524px;
+
+      &-one{
+        &--img{
+          padding-right: 10px;
+        }
+      }
+
+      &-two {
+        &--img{
+          padding-right: 10px;
+        }
+      }
+    }
   }
 
   //main content
  &__article-box {
-  padding-right: 50px;
-  padding-left: 70px;
+  padding: 0 50px 0 70px;
 
+//article boxes
   &__details {
 
     &__carbox {
@@ -87,34 +108,35 @@ body {
           color: $color-orange;
         }
         &--h1 {
-            font-size: 206%;
+            font-size: 29px;
             color: $color-black-light;
+            font-family: serif;
         }
         
         &__paragraph {
           &__p {
             color: $color-paragraph;
+            padding-bottom: 80px;
           }
         }
       } 
     }
 
     &__three-sections {
-      padding-bottom: 2%;
+      padding-top: 10px;
     }
 
     &-gloves {
       height: 387px;
       background-color: $color-blue;
+      padding-bottom: 6px;
 
       &--img {
-        padding-left: 24%;
-        padding-top: 9%;
+        padding: 10px 0 0 48px;
       }
 
       &-readmore {
-        padding-left: 28%;
-        padding-top: 15%;
+        padding: 50px 0 0 65px;
 
         &__btnreadmore {
           background-color: $color-blue-light;
@@ -145,9 +167,13 @@ body {
     &-travel {
       &-box {
         background-color: $color-white;
+        text-decoration: none;
+        padding-bottom: 6px;
+
         &-alley {
           padding-bottom: 4px;
           background-color: $color-white;
+          text-decoration: none;
         }
       }
 
@@ -167,7 +193,8 @@ body {
       }
 
       &__article {
-        padding: 5%;
+        padding: 12px;
+        background-color: $color-white; 
 
         &-title {
           &--h1 {
@@ -189,38 +216,47 @@ body {
           font-size: smaller;
           border-radius: 10px;
           border: 1px solid $color-white;
-          width: 25%;
+          width: 60px;
           padding-left: 10px;
         }
       }
     }
 
     &-culture {
-      padding-top: 13px;   
+      margin-top: 13px;   
       background-color: $color-white;
-      padding-bottom: 28px;
+      padding-bottom: 17px;
 
       &__profile {
-        padding-right: 7%;
         display: flex;
+        padding-top: 18px;
         
         &--img{
           width: 35px;
           height: 35px;
-          padding-top: 18px;
+          padding: 18px 0 0 10px;
+        }
+
+        &__name {
+          &__p {
+            color: $color-black-light;
+            font-weight: bold;
+          }
         }
 
         &__posted{
-          padding-left: 9px;
+          padding-left: 18px;
           font-size: smaller;
           color: $color-info;
         }
       }
     }
 
+//social reactions
     &__social {
       display: flex;
       border-top: 1px solid $color-info;
+      background-color: $color-white;
 
       &__button-like {
         border: none;
@@ -254,7 +290,6 @@ body {
 
       &__icon-time {
         padding-left: 5px;
-        padding-top: 0px;
 
         &--img {
           padding-top: 9px;
@@ -268,14 +303,12 @@ body {
     }
   }
 
+//news section
   &__news { 
     background-color: $color-white;
 
     &-section {
-      padding-left: 16%;
-      padding-right: 5%;
-      padding-top: 5%;
-      padding-bottom: 28px
+      padding: 18px 15px 40px 30px;
     }
 
     &--h1 {
@@ -285,17 +318,18 @@ body {
     }
 
     &-highlight-image {
-      padding-top: 5%;
+      padding-top: 10px;
     }
 
     &-headlines {
       &--big {
-        font-size: 50%;
+        font-size: 8px;
         color: $color-black-light;
+        text-decoration: none;
       }
       
       &--small {
-        font-size: 30%;
+        font-size: 6px;
         color: $color-info;
       }
 
@@ -312,35 +346,84 @@ body {
           }
 
           &__p {
-            margin-left: 47px;
-            margin-right: 60px;
-            margin-top: 11px;
+            margin: 11px 60px 0 47px;
           }
         }
       }
     }  
   } 
   
+  //article boxes before video content
   &-bottom {
     padding-bottom: 25px;
 
     &__container {
       &__chair {
-        padding-left: 70px;
-        padding-right: 50px;
+        padding: 0 50px 0 70px;
 
         &-section {
           margin-top: 13px;
           display: flex;
           background-color: $color-white;
-          padding-bottom: 60px;
+          padding-bottom: 89px;
+          text-decoration: none;
+          color: $color-black-light;
+          font-size: 15px;
 
           &--text {
-            padding: 6%;
+            padding: 20px 0 0 28px;
           }
+
+          &__category {
+            &__p {
+              color: $color-blue;
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: small;
+            }
+          }
+
+          &__summary {
+            &__p {
+              color: $color-paragraph;
+            }
+          }
+           
 
           &--h1 {
             font-size: x-large;
+          }
+
+          &__btn-chair-function {
+            display: flex;
+            padding-top: 32px;
+
+            &__btn-read {
+              &__p {
+                background-color: $color-white;
+                border: 1px solid $color-info;
+                border-bottom-left-radius: 25px;
+                border-top-left-radius: 25px;
+                width: 135px;
+                font-size: small;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+            }
+
+            &__btn-slideshow {
+              &__p {
+                background-color: $color-white;
+                border: 1px solid $color-info;
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;
+                width: 143px;
+                height: 30px;
+                font-size: small;
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+            }
           }
         }
       }
@@ -383,11 +466,11 @@ body {
     }
    }
 
+//video content 
   &-video {
     background-color: $color-black-light;
     margin-bottom: 25px;
-    padding-left: 186px;
-    padding-right: 186px;
+    padding: 0 186px 0 186px;
 
     &__p {
       color: $color-white;
@@ -402,8 +485,8 @@ body {
         &__play-icon {
           &--img {
             position:absolute;
-            top:34%;
-            left:34%;
+            top: 50px;
+            left: 85px;
           }
         }
       }

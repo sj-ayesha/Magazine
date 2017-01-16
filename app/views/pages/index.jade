@@ -9,23 +9,38 @@ block main
           
             div(class="4/4 grid__cell")
               .main-content__slider-image
-                img.main-content__slider-image--img(src="./app/images/main/slider.jpg", alt="slider-image")
+                img.main-content__slider-image--img(src="./app/images/main/slider.jpg", alt="slider photo")
                 p.main-content__slider-caption__p Food &amp; Drink
                 h1.main-content__slider-caption__headings--h1 Hella narwhal Cosby swea.
                 p.main-content__slider-caption__description__p A few years ago, the Roots were musing over how to make their music-industry career pay.
                 a.main-content__slider-caption__read-more--link(href="#") Read More
+                .main-content__slider-navigation
+                  a.main-content__slider-navigation-one(href="#")
+                    img.main-content__slider-navigation-one--img(src="./app/images/main/navigation-01.png", alt="slider-navigation-01")
+                  a.main-content__slider-navigation-two(href="#")
+                    img.main-content__slider-navigation-two--img(src="./app/images/main/navigation-02.png", alt="slider-navigation-02")
+                  a.main-content__slider-navigation-three(href="#")
+                    img.main-content__slider-navigation-three--img(src="./app/images/main/navigation-03.png", alt="slider-navigation-03")
+
 
       .grid
         .main-content__article-box
           div(class="3/4 grid__cell")
             .grid
-              .main-content__article-box__details
+              a.main-content__article-box__details(href="#")
                 .main-content__article-box__details__carbox
                   div(class="1/2 grid__cell")
                     .main-content__article-box__details__carbox-text-car
-                      p.main-content__article-box__details__carbox-text-car__p Cars & Moto
+                      p.main-content__article-box__details__carbox-text-car__p Cars &amp; Moto
                       h1.main-content__article-box__details__carbox-text-car--h1 The 2015 Best-Dressed List: How Kate Middleton
                       p.main-content__article-box__details__carbox-text-car__paragraph__p Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+                      .main-content__article-box__details__social
+                        +social-reaction({
+                          like:'273',
+                          comment:'23',
+                          time: '3 hours ago'
+                        })
 
                   div(class="1/2 grid__cell")
                     .main-content__article-box__details__carbox-image-car
@@ -149,16 +164,19 @@ block main
             .main-content__article-box-bottom__container
               .main-content__article-box-bottom__container__chair
                 .div(class="2/4 grid__cell")
-                  .main-content__article-box-bottom__container__chair-section
+                  a.main-content__article-box-bottom__container__chair-section(href="#")
                     .main-content__article-box-bottom__container__chair-section--text
-                      p.main-content__article-box-bottom__container__chair-section__p Style
+                      p.main-content__article-box-bottom__container__chair-section__category__p Style
                       h1.main-content__article-box-bottom__container__chair-section--h1 Eames Molded Fiberglass Side Chair
-                      p.main-content__article-box-bottom__container__chair-section__p The Eames Molded Fiberglass Side Chair with Wire Base is an iconic piece of American design history.
+                      p.main-content__article-box-bottom__container__chair-section__summary__p The Eames Molded Fiberglass Side Chair with Wire Base is an iconic piece of American design history.
+                      .main-content__article-box-bottom__container__chair-section__btn-chair-function
+                        button.main-content__article-box-bottom__container__chair-section__btn-chair-function__btn-read__p Read More
+                        button.main-content__article-box-bottom__container__chair-section__btn-chair-function__btn-slideshow__p Start slideshow
                     .main-content__article-box-bottom__container__chair-section--photo
-                      img.main-content__article-box-bottom__container__chair-section--img(src="./app/images/article/article-chair.jpg", alt="car-article")
+                      img.main-content__article-box-bottom__container__chair-section--img(src="./app/images/article/article-chair.jpg", alt="car-article" width="174px" height="296px")
                       
                 .div(class="1/4 grid__cell")
-                  .main-content__article-box__details-travel-box
+                  a.main-content__article-box__details-travel-box(href="#")
                     .main-content__article-box__details-travel-house
                       +travel-article-category({
                         name: 'Travel'
@@ -177,7 +195,7 @@ block main
                       })
                   
                 .div(class="1/4 grid__cell")
-                  .main-content__article-box__details-travel-box-alley
+                  a.main-content__article-box__details-travel-box-alley(href="#")
                     .main-content__article-box__details-travel-alley
                       .main-content__article-box__details-travel__text
                         +travel-article-category({

@@ -5,10 +5,10 @@ mixin video-content(video)
   -duration = video.duration || '';
 
     
-    .main-content__article-box-video-and-play
+    a.main-content__article-box-video-and-play(href="#")
       .main-content__article-box-video-and-play-section
-        img.main-content__article-box-video-and-play-section--img(src=photo alt="video")
-        img.main-content__article-box-video-and-play-section__play-icon--img(src="./app/images/video/icon-play.png" alt="play-icon")
+        img.main-content__article-box-video-and-play-section--img(src=photo alt=title)
+        img.main-content__article-box-video-and-play-section__play-icon--img(src="./app/images/video/icon-play.png" alt="play video")
       .main-content__article-box-video-and-play-text
         p.main-content__article-box-video-and-play-text__title__p=title
         p.main-content__article-box-video-and-play-text__time__p=duration
