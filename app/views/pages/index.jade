@@ -5,8 +5,7 @@ block main
     .main-content-articles
       .grid
         .grid--center
-          .main-content__slider
-          
+          .main-content__slider          
             div(class="4/4 grid__cell")
               .main-content__slider-image
                 img.main-content__slider-image--img(src="./app/images/main/slider.jpg", alt="slider photo")
@@ -86,6 +85,7 @@ block main
                         .main-content__article-box__details-culture__profile__posted
                           p.header-content__article-box__details-culture__profile__name__p Jason George
                           p.header-content__article-box__details-culture__profile__posted-hour__p 7 hours ago
+
           div(class="1/4 grid__cell")
             .main-content__article-box__news
               .main-content__article-box__news-section
@@ -218,32 +218,4 @@ block main
                         time: '5 hours ago'
                       })
       
-    .main-content__article-box-video
-      div(class="4/4 grid__cell")
-          p.main-content__article-box-video__p Video 
-      .grid
-        div(class="1/4 grid__cell")     
-            +video-content({
-              photo:'./app/images/video/video-spring.png',
-              title: 'The Big Black Book Spring',
-              duration: '12:00'
-            }) 
-        div(class="1/4 grid__cell")
-          +video-content({
-              photo:'./app/images/video/video-wheat.png',
-              title: 'Behing The Scenes Video',
-              duration: '12:00'
-            }) 
-        div(class="1/4 grid__cell")
-          +video-content({
-              photo:'./app/images/video/video-sandwich.png',
-              title: 'Michelin-Starred French',
-              duration: '12:00'
-            }) 
-        div(class="1/4 grid__cell")
-          +video-content({
-              photo:'./app/images/video/video-watch.png',
-              title: 'The Smartwatch Wars',
-              duration: '12:00'
-            }) 
     

@@ -1,0 +1,29 @@
+.main-content__article-box-video
+  div(class="4/4 grid__cell")
+      p.main-content__article-box-video__p Video 
+  .grid
+    div(class="1/4 grid__cell")     
+        +video-content({
+          photo:'./app/images/video/video-spring.png',
+          title: 'The Big Black Book Spring',
+          duration: '12:00'
+        }) 
+    div(class="1/4 grid__cell")
+      +video-content({
+          photo:'./app/images/video/video-wheat.png',
+          title: 'Behing The Scenes Video',
+          duration: '12:00'
+        }) 
+    div(class="1/4 grid__cell")
+      +video-content({
+          photo:'./app/images/video/video-sandwich.png',
+          title: 'Michelin-Starred French',
+          duration: '12:00'
+        }) 
+    div(class="1/4 grid__cell")
+      +video-content({
+          photo:'./app/images/video/video-watch.png',
+          title: 'The Smartwatch Wars',
+          duration: '12:00'
+        }) 
+    

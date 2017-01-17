@@ -1,0 +1,73 @@
+.main-content__article-box__news
+  .main-content__article-box__news-section
+    .grid
+      div(class="4/4 grid__cell")
+        .main-content__article-box__news--h1 News
+
+      .grid
+        .main-content__article-box__news-highlight-image
+          div(class="4/4 grid__cell")
+            img.main-content__article-box__news-highlight-image--img(src="./app/images/article/article-news.png", alt="news-article")
+
+      .grid
+        .main-content__article-box__news-headlines
+          .main-content__article-box__news-content
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'small',
+                time:'2 hours ago'
+              })
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'big',
+                headline: 'Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene'
+              }) 
+          .main-content__article-box__news-content
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'small',
+                time:'7 hours ago'
+              }) 
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'big',
+                headline: 'The 2015 Post-San Diego Comic Con Guide'
+              })  
+          .main-content__article-box__news-content
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'small',
+                time:'9 hours ago'
+              })  
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'big',
+                headline: 'Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge'
+              }) 
+          .main-content__article-box__news-content
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'small',
+                time:'1 day ago'
+              }) 
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'big',
+                headline: 'If You Ask Siri What 0 Divided By 0 Is It Gets Brutal'
+              }) 
+          .main-content__article-box__news-content
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'small',
+                time:'1 day ago'
+              })
+            div(class="4/4 grid__cell")
+              +news-content({
+                type:'big',
+                headline: 'Dr. Dre Compton Review: A Grand Finale Game Changer'
+              }) 
+
+  .main-content__article-box__news-headlines__footer
+    div(class="4/4 grid__cell")
+      .main-content__article-box__news-headlines__footer-btn-news
+        button.main-content__article-box__news-headlines__footer-btn-news__btnviewall All News
