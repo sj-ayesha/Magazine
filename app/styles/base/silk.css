@@ -777,13 +777,8 @@ th {
 }
 
 .header-content-navbar__item__btn-search {
-  background-color: white;
+  background-color: #fff;
   border: none;
-}
-
-.header-content-navbar__item__btn-search--img {
-  width: 20px;
-  height: 10px;
 }
 
 .header-content-navbar--link {
@@ -877,10 +872,15 @@ body {
   padding-right: 28px;
 }
 
+.main-content__article-box__details__carbox-text-car {
+  text-decoration: none;
+}
+
 .main-content__article-box__details__carbox-text-car__p {
   text-transform: uppercase;
   font-size: smaller;
   color: #e0a433;
+  font-weight: bold;
 }
 
 .main-content__article-box__details__carbox-text-car--h1 {
@@ -909,13 +909,15 @@ body {
 }
 
 .main-content__article-box__details-gloves-readmore {
-  padding: 50px 0 0 65px;
+  padding: 50px 0 0 53px;
 }
 
 .main-content__article-box__details-gloves-readmore__btnreadmore {
   background-color: #4c8ac7;
-  border-radius: 10px;
+  border-radius: 25px;
   color: #fff;
+  width: 120px;
+  height: 35px;
 }
 
 .main-content__article-box__details-gloves-text__p {
@@ -949,21 +951,28 @@ body {
 .main-content__article-box__details-travel-house {
   background-image: url("../../images/article/article-house.png");
   height: 185px;
+  margin-top: 12px;
 }
 
 .main-content__article-box__details-travel-lake {
   background-image: url("../../images/article/article-lake.png");
   height: 185px;
+  margin-top: 12px;
 }
 
 .main-content__article-box__details-travel-alley {
   background-image: url("../../images/article/article-alley.jpg");
   height: 185px;
+  margin-top: 12px;
+}
+
+.main-content__article-box__details-travel__text {
+  padding: 15px;
 }
 
 .main-content__article-box__details-travel__article {
-  padding: 12px;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .main-content__article-box__details-travel__article-title--h1 {
@@ -988,7 +997,33 @@ body {
 .main-content__article-box__details-culture {
   margin-top: 13px;
   background-color: #fff;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
+}
+
+.main-content__article-box__details-culture__category__p {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  width: 70px;
+  text-align: center;
+}
+
+.main-content__article-box__details-culture__title__p {
+  position: absolute;
+  top: 160px;
+  left: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-content__article-box__details-culture__summary__p {
+  position: absolute;
+  top: 205px;
+  left: 12px;
+  color: #fff;
 }
 
 .main-content__article-box__details-culture__profile {
@@ -1067,7 +1102,7 @@ body {
 }
 
 .main-content__article-box__news-section {
-  padding: 18px 15px 40px 30px;
+  padding: 18px 15px 23px 30px;
 }
 
 .main-content__article-box__news--h1 {
@@ -1101,10 +1136,7 @@ body {
   display: block;
   color: #fff;
   height: 40px;
-}
-
-.main-content__article-box__news-headlines__footer-btn-news__p {
-  margin: 11px 60px 0 47px;
+  margin: 1px 60px 0 47px;
 }
 
 .main-content__article-box-bottom {
@@ -1125,8 +1157,12 @@ body {
   font-size: 15px;
 }
 
-.main-content__article-box-bottom__container__chair-section--text {
+.main-content__article-box-bottom__container__chair-section__text {
   padding: 20px 0 0 28px;
+}
+
+.main-content__article-box-bottom__container__chair-section__category {
+  text-decoration: none;
 }
 
 .main-content__article-box-bottom__container__chair-section__category__p {

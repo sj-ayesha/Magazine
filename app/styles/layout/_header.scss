@@ -61,13 +61,8 @@
       padding-top: 2%;
 
       &__btn-search {
-        background-color: white;
+        background-color: $color-white;
         border: none;
-
-        &--img {
-        width: 20px;
-        height: 10px;
-        }
       }
     }
 

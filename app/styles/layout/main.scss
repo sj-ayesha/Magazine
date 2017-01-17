@@ -102,10 +102,13 @@ body {
       padding-right: 28px;
 
       &-text-car {
+        text-decoration: none;
+
         &__p {
           text-transform: uppercase;
           font-size: smaller;
           color: $color-orange;
+          font-weight: bold;
         }
         &--h1 {
             font-size: 29px;
@@ -136,12 +139,14 @@ body {
       }
 
       &-readmore {
-        padding: 50px 0 0 65px;
+        padding: 50px 0 0 53px;
 
         &__btnreadmore {
           background-color: $color-blue-light;
-          border-radius: 10px;
+          border-radius: 25px;
           color: $color-white;
+          width: 120px;
+          height: 35px;
         }
       }
 
@@ -180,21 +185,28 @@ body {
       &-house {
         background-image: url("../../images/article/article-house.png");
         height:185px;
+        margin-top: 12px;
       }
 
       &-lake {
         background-image: url("../../images/article/article-lake.png");
         height:185px;
+        margin-top: 12px;
       } 
 
       &-alley {
         background-image: url("../../images/article/article-alley.jpg");
         height:185px;
+        margin-top: 12px;
+      }
+
+      &__text {
+        padding: 15px;
       }
 
       &__article {
-        padding: 12px;
         background-color: $color-white; 
+        text-decoration: none;
 
         &-title {
           &--h1 {
@@ -225,7 +237,39 @@ body {
     &-culture {
       margin-top: 13px;   
       background-color: $color-white;
-      padding-bottom: 17px;
+      padding-bottom: 16px;
+
+      &__category {
+        &__p {
+          position: absolute;
+          top: 0px;
+          left: 12px;
+          color: $color-white;
+          border: 1px solid $color-white;
+          border-radius: 15px;
+          width: 70px;
+          text-align: center;
+        }
+      }
+
+      &__title {
+        &__p {
+          position: absolute;
+          top: 160px;
+          left: 12px;
+          color: $color-white;
+          font-weight: bold;
+        }
+      }
+
+      &__summary {
+        &__p {
+          position: absolute;
+          top: 205px;
+          left: 12px;
+          color: $color-white;
+        }
+      }
 
       &__profile {
         display: flex;
@@ -308,7 +352,7 @@ body {
     background-color: $color-white;
 
     &-section {
-      padding: 18px 15px 40px 30px;
+      padding: 18px 15px 23px 30px;
     }
 
     &--h1 {
@@ -343,10 +387,7 @@ body {
             display: block;
             color: $color-white;
             height: 40px;
-          }
-
-          &__p {
-            margin: 11px 60px 0 47px;
+            margin: 1px 60px 0 47px;
           }
         }
       }
@@ -370,11 +411,13 @@ body {
           color: $color-black-light;
           font-size: 15px;
 
-          &--text {
+          &__text {
             padding: 20px 0 0 28px;
           }
 
           &__category {
+            text-decoration: none;
+
             &__p {
               color: $color-blue;
               text-transform: uppercase;
