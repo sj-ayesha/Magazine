@@ -1,0 +1,47 @@
+.article-box__video {
+  background-color: $color-black-light;
+  margin-bottom: 25px;
+  padding: 0 186px 0 186px;
+
+  &__p {
+    color: $color-white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &-and-play {
+    &__section {
+      position: relative;
+
+      &__play-icon {
+        &--img {
+          position:absolute;
+          top: 50px;
+          left: 85px;
+        }
+      }
+    }
+
+    &__text {
+      color: $color-white;
+
+      &__title {
+        &__p {
+          float: left;
+          font-weight: bolder;
+          font-size: 13px;
+        }
+      }
+
+      &__time {
+        &__p {
+          float:right;
+          font-size: 13px;
+          padding-left: 25px;
+          color: $color-info;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
 .slider {
-  padding: 19px;
+  padding: 18px;
 
   &-image {
 
     &--img{
       position: relative;
-      margin-left: 97px;
+      margin-left: 10px;
     }
     
   }
@@ -44,6 +44,22 @@
         width: 418px;
         line-height: 23px;
         color: $color-white;
+      }
+    }
+
+    &__read-more {
+      &--link {
+        position: absolute;
+        bottom: 142px;
+        left: 612px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 20px;
+        width: 115px;
+        padding: 11px;
+        font-size: 12px;
+        text-transform: uppercase;
       }
     }
   }

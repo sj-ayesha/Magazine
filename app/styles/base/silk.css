@@ -783,7 +783,7 @@ th {
 }
 
 .header-content-navbar {
-  padding-top: 18px;
+  padding-top: 20px;
   padding-left: 170px;
   text-transform: uppercase;
 }
@@ -798,19 +798,19 @@ th {
 }
 
 .header-content-navbar--link {
-  padding-right: 47px;
+  padding-right: 45px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
 
 .slider {
-  padding: 19px;
+  padding: 18px;
 }
 
 .slider-image--img {
   position: relative;
-  margin-left: 97px;
+  margin-left: 10px;
 }
 
 .slider-caption__p {
@@ -845,6 +845,20 @@ th {
   color: #fff;
 }
 
+.slider-caption__read-more--link {
+  position: absolute;
+  bottom: 142px;
+  left: 612px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 115px;
+  padding: 11px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .slider-navigation {
   display: flex;
   position: absolute;
@@ -858,6 +872,292 @@ th {
 
 .slider-navigation-two--img {
   padding-right: 15px;
+}
+
+.article-box {
+  margin-left: 212px;
+  margin-right: 124px;
+}
+
+.article-box--big {
+  display: flex;
+  margin-right: 83px;
+  background-color: white;
+}
+
+.article-box--big__text {
+  text-decoration: none;
+  color: black;
+}
+
+.article-box--big__text-section {
+  padding-top: 60px;
+}
+
+.article-box--big__text__h1 {
+  font-size: 28px;
+  margin-top: -4px;
+  font-family: serif;
+}
+
+.article-box--big__text__p {
+  font-size: small;
+}
+
+.article-box--big__chair-text {
+  padding: 20px 0 0 28px;
+}
+
+.article-box--big__chair__category {
+  text-decoration: none;
+}
+
+.article-box--big__chair__category__p {
+  color: #3078c0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+.article-box--big__chair--h1 {
+  font-size: x-large;
+}
+
+.article-box--big__chair__summary__p {
+  color: #b9b9ba;
+}
+
+.article-box--big__chair__btn-function {
+  display: flex;
+  padding-top: 32px;
+}
+
+.article-box--big__chair__btn-function__btn-readmore__p {
+  background-color: #fff;
+  border: 1px solid #a3a3a4;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  width: 135px;
+  font-size: small;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.article-box--big__chair__btn-function__btn-slideshow__p {
+  background-color: #fff;
+  border: 1px solid #a3a3a4;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 143px;
+  height: 30px;
+  font-size: small;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.article-box--small {
+  display: flex;
+}
+
+.article-box--small__gloves {
+  height: 387px;
+  background-color: #3078c0;
+  padding-bottom: 6px;
+}
+
+.article-box--small__gloves--img {
+  padding: 10px 0 0 48px;
+}
+
+.article-box--small__gloves-readmore {
+  padding: 50px 0 0 53px;
+}
+
+.article-box--small__gloves-readmore__btnreadmore {
+  background-color: #4c8ac7;
+  border-radius: 25px;
+  color: #fff;
+  width: 120px;
+  height: 35px;
+}
+
+.article-box--small__gloves-text__p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: smaller;
+  padding-top: 10px;
+}
+
+.article-box--small__gloves-text--h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: larger;
+  padding-top: 15px;
+}
+
+.article-box--small__travel {
+  background-color: #fff;
+}
+
+.article-box--small__travel-lake {
+  background-image: url("../../images/article/article-lake.png");
+  height: 185px;
+  margin-top: 12px;
+}
+
+.article-box--small__travel-house {
+  background-image: url("../../images/article/article-house.png");
+  height: 185px;
+  margin-top: 12px;
+}
+
+.article-box--small__travel-alley {
+  background-image: url("../../images/article/article-alley.jpg");
+  height: 185px;
+  margin-top: 12px;
+}
+
+.article-box--small__travel__article {
+  text-decoration: none;
+}
+
+.article-box--small__travel__article-title--h1 {
+  font-size: larger;
+  color: #333;
+}
+
+.article-box--small__travel__article-summary__p {
+  color: #b9b9ba;
+}
+
+.article-box--small__culture {
+  margin-top: 13px;
+  background-color: #fff;
+  padding-bottom: 16px;
+}
+
+.article-box--small__culture__category__p {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  width: 70px;
+  text-align: center;
+}
+
+.article-box--small__culture__title__p {
+  position: absolute;
+  top: 160px;
+  left: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.article-box--small__culture__summary__p {
+  position: absolute;
+  top: 205px;
+  left: 12px;
+  color: #fff;
+}
+
+.article-box--small__culture__profile {
+  display: flex;
+  padding-top: 18px;
+}
+
+.article-box--small__culture__profile--img {
+  width: 35px;
+  height: 35px;
+  padding: 18px 0 0 10px;
+}
+
+.article-box--small__culture__profile__name__p {
+  color: #333;
+  font-weight: bold;
+}
+
+.article-box--small__culture__profile__posted {
+  padding-left: 18px;
+  font-size: smaller;
+  color: #a3a3a4;
+}
+
+.article-box__news-section {
+  background-color: white;
+}
+
+.article-box__news--h1 {
+  margin-left: -22px;
+  padding-top: 8px;
+}
+
+.article-box__news-headlines--small__h1 {
+  font-size: 9px;
+  color: #a3a3a4;
+  padding-top: 2px;
+}
+
+.article-box__news-headlines--big {
+  text-decoration: none;
+  color: black;
+}
+
+.article-box__news-headlines--big__h1 {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  margin-top: 3px;
+  margin-right: 57px;
+  line-height: 17px;
+  font-family: sans-serif;
+}
+
+.article-box__news-highlight-image--img {
+  padding-top: 31px;
+}
+
+.article-box__video {
+  background-color: #333;
+  margin-bottom: 25px;
+  padding: 0 186px 0 186px;
+}
+
+.article-box__video__p {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-box__video-and-play__section {
+  position: relative;
+}
+
+.article-box__video-and-play__section__play-icon--img {
+  position: absolute;
+  top: 50px;
+  left: 85px;
+}
+
+.article-box__video-and-play__text {
+  color: #fff;
+}
+
+.article-box__video-and-play__text__title__p {
+  float: left;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.article-box__video-and-play__text__time__p {
+  float: right;
+  font-size: 13px;
+  padding-left: 25px;
+  color: #a3a3a4;
+  font-weight: bolder;
 }
 
 footer {

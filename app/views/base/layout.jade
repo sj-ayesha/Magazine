@@ -11,7 +11,9 @@ html(lang="en")
   body
     .wrapper
       include header.jade
-      block main
-        .main-content
-          include slider.jade
+      .main-content
+        include slider.jade
+        block main
+        include video.jade
     footer
+      include footer.jade

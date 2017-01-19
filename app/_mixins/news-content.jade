@@ -5,10 +5,10 @@ mixin news-content(options)
   -time = options.time || '';
 
   if type=='small'
-    .main-content__article-box__news-headlines--small
-      h1.main-content__article-box__news-headlines--small--h1=time
+    .article-box__news-headlines--small
+      h1.article-box__news-headlines--small__h1=time
   else
-    a.main-content__article-box__news-headlines--big(href="#")
-      h1.main-content__article-box__news-headlines--big--h1=headline
+    a.article-box__news-headlines--big(href="#")
+      h1.article-box__news-headlines--big__h1=headline
     .horizontal-line
     

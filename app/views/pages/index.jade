@@ -1,1 +1,176 @@
 extends ../base/layout.jade
+
+block main
+  .grid
+    .article-box
+      .grid
+        div(class="3/4 grid__cell")
+          .article-box--big
+            div(class="1/2 grid__cell")
+              .article
+                .article-box--big__text
+                  a.article-box--big__text(href="#")
+                    p.article-box--big__text__p Cars &amp; Moto
+                      h1.article-box--big__text__h1 The 2015 Best-Dressed List: How Kate Middleton
+                      p.article-box--big__text__p Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+            div(class="1/2 grid__cell")
+              a.article-box--big__image(href="#")
+                img.article-box--big__image__img(src="./app/images/article/article-car.jpg", alt="car-article")
+          
+          .article-box__threes
+            .article-box--small
+              div(class="1/3 grid__cell")
+                article
+                  .article-box--small__gloves
+                    p.article-box--small__gloves-text__p style
+                    h1.article-box--small__gloves-text--h1 Offbeat Portraits Give Stars
+                    img.article-box--small__gloves--img(src="./app/images/article/article-gloves.png", alt="gloves-article")
+                    .article-box--small__gloves-readmore
+                      button.article-box--small__gloves__btnreadmore Read More
+              div(class="1/3 grid__cell")
+                article
+                  .article-box--small__travel
+                    .article-box--small__travel-lake
+                      .article-box--small__travel__text
+                        +travel-article-category({
+                          name: 'Travel'
+                        })     
+                    a.article-box--small__travel__article(href="#")
+                      +travel-article-summary({
+                        title: 'Best of Minnesota 2015: Revealing what rocks',
+                        summary: 'I whipped the Scotch tape from my pocket and said'
+                      })
+
+              div(class="1/3 grid__cell")
+                article
+                  .article-box--small__culture
+                    img.article-box--small__culture__photo--img(src="./app/images/article/article-lantern.jpg" alt="lantern-article" width="225")
+                    p.article-box--small__culture__category__p culture
+                    p.article-box--small__culture__title__p How to trim your out of control Mustache
+                    p.article-box--small__culture__summary__p I whipped the Scotch tape from my pocket and said 
+                    .article-box--small__culture__profile
+                      img.article-box--small__culture__profile--img(src="./app/images/article/profile-pic.png" alt="profile-pic")
+                      .article-box--small__culture__profile__posted
+                        p.header-content--small__article-box__culture__profile__name__p Jason George
+                        p.header-content--small__article-box__culture__profile__posted-hour__p 7 hours ago
+
+        div(class="1/4 grid__cell")
+          .article-box__news
+            .grid
+              div(class="4/4 grid__cell")
+                .article-box__news--h1 News
+
+              .grid
+                div(class="4/4 grid__cell")
+                  .article-box__news-highlight-image
+                    img.article-box__news-highlight-image--img(src="./app/images/article/article-news.png", alt="news-article")
+              
+              .grid
+                .article-box__news-headlines
+                  .article-box__news-content
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'small',
+                        time:'2 hours ago'
+                      })
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'big',
+                        headline: 'Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene'
+                      })
+
+                  .article-box__news-content
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'small',
+                        time:'7 hours ago'
+                      }) 
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'big',
+                        headline: 'The 2015 Post-San Diego Comic Con Guide'
+                      }) 
+
+                  .article-box__news-content
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'small',
+                        time:'9 hours ago'
+                      })  
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'big',
+                        headline: 'Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge'
+                      }) 
+
+                  .article-box__news-content
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'small',
+                        time:'1 day ago'
+                      })  
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'big',
+                        headline: 'If You Ask Siri What 0 Divided By 0 Is It Gets Brutal'
+                      }) 
+
+                  .article-box__news-content
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'small',
+                        time:'1 day ago'
+                      })  
+                    div(class="4/4 grid__cell")
+                      +news-content({
+                        type:'big',
+                        headline: 'Dr. Dre Compton Review: A Grand Finale Game Changer'
+                      }) 
+
+                      
+      .grid
+        .article-box-bottom
+          .div(class="2/4 grid__cell")
+            article
+              .article-box--big
+                .article-box--big__chair-text
+                  a.article-box--big__chair__category(href="#")
+                    p.article-box--big__chair__category__p Style
+                  a.article-box--big__chair__heading
+                    h1.article-box--big__chair--h1 Eames Molded Fiberglass Side Chair
+                    p.article-box--big__chair__summary__p The Eames Molded Fiberglass Side Chair with Wire Base is an iconic piece of American design history.
+                  .article-box--big__chair__btn-function
+                    button.article-box--big__chair__btn-function__btn-readmore__p Read More
+                    button.article-box--big__chair__btn-function__btn-slideshow__p Start slideshow
+                .article-box--big__chair--photo
+                  img.article-box--big__chair--img(src="./app/images/article/article-chair.jpg", alt="car-article" width="174" height="296")
+                  
+          .div(class="1/4 grid__cell")
+            article
+              .article-box--small
+                .article-box--small__travel
+                  .article-box--small__travel-house
+                    +travel-article-category({
+                      name: 'Travel'
+                    })    
+                  a.article-box--small__travel__article(href="#")
+                    +travel-article-summary({
+                      title: 'Best of Minnesota 2015: Revealing what rocks',
+                      summary: 'I whipped the Scotch tape from my pocket and said'
+                    })
+
+            
+          .div(class="1/4 grid__cell")
+            article
+              .article-box--small
+                .article-box--small__travel
+                  .article-box--small__travel-alley
+                    .article-box--small__travel__text
+                      +travel-article-category({
+                        name: 'Travel'
+                      })     
+                  a.article-box--small__travel__article(href="#")
+                    +travel-article-summary({
+                      title: "Reading Hemingway's Personal Letter",
+                      summary: "There isn't much that hasn't been said about Ernest Miller"
+                    })
