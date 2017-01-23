@@ -10,14 +10,22 @@ block main
               .article
                 .article-box--big__text
                   a.article-box--big__text(href="#")
-                    p.article-box--big__text__p Cars &amp; Moto
+                    p.article-box--big__text__category__p Cars &amp; Moto
                       h1.article-box--big__text__h1 The 2015 Best-Dressed List: How Kate Middleton
                       p.article-box--big__text__p Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+                      .article-box__social
+                        +social-reaction({
+                          like:'273',
+                          comment:'23',
+                          time: '3 hours ago'
+                        })
+
             div(class="1/2 grid__cell")
               a.article-box--big__image(href="#")
                 img.article-box--big__image__img(src="./app/images/article/article-car.jpg", alt="car-article")
           
-          .article-box__threes
+          .article-box__three-section
             .article-box--small
               div(class="1/3 grid__cell")
                 article
@@ -40,11 +48,17 @@ block main
                         title: 'Best of Minnesota 2015: Revealing what rocks',
                         summary: 'I whipped the Scotch tape from my pocket and said'
                       })
+                    .article-box__social
+                        +social-reaction({
+                          like:'298',
+                          comment:'12',
+                          time: '5 hours ago'
+                        })
 
               div(class="1/3 grid__cell")
                 article
                   .article-box--small__culture
-                    img.article-box--small__culture__photo--img(src="./app/images/article/article-lantern.jpg" alt="lantern-article" width="225")
+                    img.article-box--small__culture__photo--img(src="./app/images/article/article-lantern.jpg" alt="lantern-article" width="231px" height="289px")
                     p.article-box--small__culture__category__p culture
                     p.article-box--small__culture__title__p How to trim your out of control Mustache
                     p.article-box--small__culture__summary__p I whipped the Scotch tape from my pocket and said 
@@ -55,78 +69,81 @@ block main
                         p.header-content--small__article-box__culture__profile__posted-hour__p 7 hours ago
 
         div(class="1/4 grid__cell")
-          .article-box__news
             .grid
-              div(class="4/4 grid__cell")
-                .article-box__news--h1 News
-
-              .grid
+              .article-box__news
                 div(class="4/4 grid__cell")
-                  .article-box__news-highlight-image
-                    img.article-box__news-highlight-image--img(src="./app/images/article/article-news.png", alt="news-article")
-              
-              .grid
-                .article-box__news-headlines
-                  .article-box__news-content
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'small',
-                        time:'2 hours ago'
-                      })
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'big',
-                        headline: 'Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene'
-                      })
+                  .article-box__news--h1 News
 
-                  .article-box__news-content
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'small',
-                        time:'7 hours ago'
-                      }) 
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'big',
-                        headline: 'The 2015 Post-San Diego Comic Con Guide'
-                      }) 
+                .grid
+                  div(class="4/4 grid__cell")
+                    .article-box__news-highlight-image
+                      img.article-box__news-highlight-image--img(src="./app/images/article/article-news.png", alt="news-article")
+                
+                .grid
+                  .article-box__news-headlines
+                    .article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'2 hours ago'
+                        })
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'Exclusive Hell on Wheels Season 5 Episode 5 Preview Scene'
+                        })
 
-                  .article-box__news-content
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'small',
-                        time:'9 hours ago'
-                      })  
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'big',
-                        headline: 'Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge'
-                      }) 
+                    .article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'7 hours ago'
+                        }) 
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'The 2015 Post-San Diego Comic Con Guide'
+                        }) 
 
-                  .article-box__news-content
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'small',
-                        time:'1 day ago'
-                      })  
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'big',
-                        headline: 'If You Ask Siri What 0 Divided By 0 Is It Gets Brutal'
-                      }) 
+                    .article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'9 hours ago'
+                        })  
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'Dear Apple, We Need To Talk About Your Ridiculous iPhone Charge'
+                        }) 
 
-                  .article-box__news-content
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'small',
-                        time:'1 day ago'
-                      })  
-                    div(class="4/4 grid__cell")
-                      +news-content({
-                        type:'big',
-                        headline: 'Dr. Dre Compton Review: A Grand Finale Game Changer'
-                      }) 
+                    .article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'1 day ago'
+                        })  
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'If You Ask Siri What 0 Divided By 0 Is It Gets Brutal'
+                        }) 
 
+                    .article-box__news-content
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'small',
+                          time:'1 day ago'
+                        })  
+                      div(class="4/4 grid__cell")
+                        +news-content({
+                          type:'big',
+                          headline: 'Dr. Dre Compton Review: A Grand Finale Game Changer'
+                        }) 
+                  .article-box__news-headlines__footer
+                    div(class="4/4 grid__cell")
+                      .article-box__news-headlines__footer-btn-news
+                        button.article-box__news-headlines__footer-btn-news__btnviewall All News
                       
       .grid
         .article-box-bottom
@@ -143,7 +160,7 @@ block main
                     button.article-box--big__chair__btn-function__btn-readmore__p Read More
                     button.article-box--big__chair__btn-function__btn-slideshow__p Start slideshow
                 .article-box--big__chair--photo
-                  img.article-box--big__chair--img(src="./app/images/article/article-chair.jpg", alt="car-article" width="174" height="296")
+                  img.article-box--big__chair--img(src="./app/images/article/article-chair.jpg", alt="car-article" width="195" height="338")
                   
           .div(class="1/4 grid__cell")
             article
@@ -158,6 +175,13 @@ block main
                       title: 'Best of Minnesota 2015: Revealing what rocks',
                       summary: 'I whipped the Scotch tape from my pocket and said'
                     })
+
+                    .article-box__social
+                      +social-reaction({
+                        like:'298',
+                        comment:'12',
+                        time: '5 hours ago'
+                      })
 
             
           .div(class="1/4 grid__cell")
@@ -174,3 +198,10 @@ block main
                       title: "Reading Hemingway's Personal Letter",
                       summary: "There isn't much that hasn't been said about Ernest Miller"
                     })
+
+                    .article-box__social
+                      +social-reaction({
+                        like:'298',
+                        comment:'12',
+                        time: '5 hours ago'
+                      })
