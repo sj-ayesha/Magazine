@@ -1,3 +1,7 @@
+body{
+  font-family: $font-family-master;
+}
+
 .article-box {
     margin: 0px 124px 0px 212px;
 
@@ -9,6 +13,7 @@
     &__text {
       text-decoration: none;
       color: $color-black-light;
+      padding-top: 10px;
 
       &-section {
         padding-top: 60px;
@@ -17,6 +22,7 @@
       &__category {
         &__p {
           font-size: 10px;
+          color: $color-orange;
         }
       }
 
@@ -29,6 +35,7 @@
       &__p {
         font-size: small;
         padding-bottom: 116px;
+        color: $color-paragraph;
       }
     }
 
@@ -67,29 +74,24 @@
         display: flex;
 
         &__btn-readmore {
-          &__p {
-            background-color: $color-white;
-            border: 1px solid $color-info;
-            border-bottom-left-radius: 25px;
-            border-top-left-radius: 25px;
-            width: 120px;
-            font-size: 11px;
-            text-transform: uppercase;
-            font-weight: bold;
-          }
+          background-color: $color-white;
+          border: 1px solid $color-info;
+          border-bottom-left-radius: 25px;
+          border-top-left-radius: 25px;
+          width: 120px;
+          font-size: 11px;
+          text-transform: uppercase;
         }
 
         &__btn-slideshow {
-          &__p {
-            background-color: $color-white;
-            border: 1px solid $color-info;
-            border-bottom-right-radius: 25px;
-            border-top-right-radius: 25px;
-            width: 120px;
-            font-size: 11px;
-            text-transform: uppercase;
-            font-weight: bold;
-          }
+          background-color: $color-white;
+          border: 1px solid $color-info;
+          border-bottom-right-radius: 25px;
+          border-top-right-radius: 25px;
+          width: 120px;
+          font-size: 11px;
+          text-transform: uppercase;
+          font-weight: bold;
         }
       }
     }
@@ -113,17 +115,17 @@
         padding: 10px 0 0 48px;
       }
 
-      &-readmore {
-        padding: 50px 0 0 53px;
-
-        &__btnreadmore {
-          background-color: $color-blue-light;
-          border-radius: 25px;
-          color: $color-white;
-          width: 120px;
-          height: 35px;
-        }
+      &__read-more {
+        padding: 22px 0 0 53px;
       }
+
+      &__btn-read-more {
+        background-color: $color-blue-light;
+        border-radius: 25px;
+        color: $color-white;
+        width: 120px;
+        height: 35px;
+      }      
 
       &-text {
         &__p {
@@ -168,6 +170,18 @@
         padding: 4px 0px 0px 12px;
       }
 
+      &__category {
+        &__p {
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 15px;
+          width: 70px;
+          text-align: center;
+          margin-top: 10px;
+          margin-left: -5px;
+        }
+      }
+
       &__article {
         text-decoration: none;
 
@@ -188,8 +202,9 @@
 
     &__culture { 
       background-color: $color-white;
-      font-size: 11px;
+      font-size: 16px;
       margin: 13px 40px 0px -28px;
+      position: relative;
 
       &__category {
         &__p {
@@ -266,10 +281,11 @@
     &--h1 {
       margin-left: -22px;
       padding-top: 8px;
+      font-size: 15px;
     }
 
     &-headlines {
-      padding-bottom: 42px;
+      padding-bottom: 12px;
       
       &--small {
         &__h1{
@@ -303,17 +319,11 @@
             display: block;
             color: $color-white;
             height: 34px;
-            margin: 0px 60px 0 47px;
+            margin: 0 60px 0 47px;
             font-size: 11px;
             text-transform: uppercase;
           }
         }
-      }
-    }
-
-    &-highlight-image {
-      &--img  {
-        padding-top: 31px;
       }
     }
   }
@@ -372,4 +382,10 @@
       }
     }
   }
+}
+
+.horizontal-line{
+  border-bottom: 1px solid $color-info;
+  padding-top: 8px;
+  width: 190px;
 }
